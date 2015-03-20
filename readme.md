@@ -1,6 +1,7 @@
 ## SETUP
 
 Clone/Unzip to your htdocs folder (C:\xampp\htdocs\stock_bae[LARAVEL])
+
 Use with 'stock_bae' DB
 
 ## Laravel PHP Framework
