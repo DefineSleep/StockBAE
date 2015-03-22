@@ -40,7 +40,7 @@ class FaController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		//LEL
 	}
 
 	/**
