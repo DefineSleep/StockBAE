@@ -17,7 +17,9 @@ class FaController extends Controller {
 	 */
 	public function index()
 	{
-		//
+
+        $fas = Fa::all();
+        return \View::make('falst')->with('fas',$fas);
 	}
 
 	/**
