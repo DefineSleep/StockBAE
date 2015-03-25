@@ -10,6 +10,8 @@ class Client_list extends Model {
      * @var string
      */
     protected $table = 'client_list';
+    protected $created_at = 'false';
+    protected $updated_at = 'false';
 
     /**
      * The attributes that are mass assignable.

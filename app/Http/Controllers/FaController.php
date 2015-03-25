@@ -1,9 +1,11 @@
 <?php namespace App\Http\Controllers;
 
 use App\Admin;
+use App\Fa;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class FaController extends Controller {
@@ -25,11 +27,11 @@ class FaController extends Controller {
 	 */
 	public function add()
 	{
-        $fas = Admin::all()->first()
+        $fas = Fa::all()->first()
 
             //->where('users.name', '=', 'abc')
             ->get();
-      //  $fa = Fa::updateOrCreate(['fa_id' => 'ff69','name' => 'Frankie Faison','email' => 'dirtyland@gmail.com','address' => '5th Street Near 6th ','dob' => '1969-06-09','contact_no' => '55696969','ni_no' => '012345678']);
+        $fa = Fa::updateOrCreate(['fa_id' => 'ff69','password' => 'testing123','name' => 'Frankie Faison','email' => 'dirtyland@gmail.com','address' => '5th Street Near 6th ','dob' => '1969-06-09','contact_no' => '55696969','start_date' => '1980-05-04','salary/hr' => '100.69','ni_no' => '012345678','admin_id' => 'sp85']);
         return \View::make('index')->with('fas',$fas);
     }
 
@@ -38,9 +40,11 @@ class FaController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit()
 	{
-		//LEL
+        $fas = Fa::all();
+        $fa = Fa::where('fa_id','vv8')->update(['salary/hr'=>'69.00']);
+        return \View::make('index')->with('fas',$fas);
 	}
 
 	/**
@@ -49,9 +53,15 @@ class FaController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function delete($id)
+	public function delete()
 	{
-		//
+        $fas = Fa::all()->first()
+
+            //->where('users.name', '=', 'abc')
+            ->get();
+        $fa = Fa::where('fa_id',"ff69");
+        $fa->delete();
+        return \View::make('index')->with('fas',$fas);
 	}
 
 	/**

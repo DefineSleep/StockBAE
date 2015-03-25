@@ -16,6 +16,8 @@ class Admin extends Model implements AuthenticatableContract, CanResetPasswordCo
      * @var string
      */
     protected $table = 'admin';
+    protected $created_at = 'false';
+    protected $updated_at = 'false';
 
     /**
      * The attributes that are mass assignable.

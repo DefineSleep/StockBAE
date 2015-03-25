@@ -10,8 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', 'FaController@add');
+Route::get('/edit', 'FaController@edit');
+Route::get('/delete', 'FaController@delete');
+Route::get('/add', 'FaController@add');
 
 Route::get('home', 'HomeController@index');
 
