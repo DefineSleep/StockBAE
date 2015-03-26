@@ -19,9 +19,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="assets/images/ico/sb-icon-b.png">
+    <link rel="shortcut icon" href="assets/images/ico/fab.ico">
 
-    <title>StockBae - Table</title>
+    <title>StockBae - Browse Markets</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="assets/css/plugins/pace.css">
@@ -31,9 +31,10 @@
     <!-- Plugin Css Put Here -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap-progressbar-3.1.1.css">
-    <link rel="stylesheet" href="assets/css/plugins/dndTable.css">
-    <link rel="stylesheet" href="assets/css/plugins/tsort.css">
+    <link rel="stylesheet" href="assets/css/plugins/lightGallery.css">
+    <!--[if gt IE 8]> <link href="assets/css/ie/ie9-gallery.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
+
+    <link href="assets/css/plugins/shuffle.css" rel="stylesheet">
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
@@ -45,6 +46,7 @@
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
+    <script src="assets/js/lib/modernizr.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,9 +56,8 @@
     <![endif]-->
 </head>
 <body class="">
-    <body class="">
-<!--Navigation Top Bar Start-->
-<nav class="navigation">
+    <!--Navigation Top Bar Start-->
+    <nav class="navigation">
         <div class="container-fluid">
             <!--Logo text start-->
             <div class="header-logo">
@@ -95,7 +96,7 @@
                 <ul>
                     <li class="dropdown">
                         <!--All task drop down start-->
-
+                        
                         <div class="dropdown-menu right top-dropDown-1">
                             <h4>All Task</h4>
                             <ul class="goal-item">
@@ -249,7 +250,7 @@
                                     </a>
                                 </li>
                                 <li class="only-link">
-                                    <a href="">View All</a>
+                                    <a href="mail.html">View All</a>
                                 </li>
                             </ul>
                         </div>
@@ -266,36 +267,34 @@
             </div>
         </div>
     </nav>
-<!--Navigation Top Bar End-->
+    <!--Navigation Top Bar End-->
     <section id="main-container">
+	
+	
+	
 
-        <!--Left navigation section start-->
-
-
-
-
-
-<section id="left-navigation">
+        <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
                 <img src="assets/images/userimage/avatar2-80.png" alt=""/>
-
+               
             </div>
-
+           
             <!--Left navigation user details end-->
 
             <!--Phone Navigation Menu icon start-->
             <div class="phone-nav-box visible-xs">
-                <a class="phone-logo" href="index.html" title="">
+                <a class="phone-logo" href="profile.html" title="">
+                    <h1>StockBae</h1>
                 </a>
-
+               
                 <div class="clearfix"></div>
             </div>
             <!--Phone Navigation Menu icon start-->
 
             <!--Left navigation start-->
             <ul class="mainNav">
-                <li>
+				<li>
                     <a href="index-2.html">
                         <i class="fa fa-dashboard"></i> <span>Profile</span>
                     </a>
@@ -305,25 +304,31 @@
                         <i class="fa fa-dashboard"></i> <span>Client Portfolio</span>
                     </a>
                 </li>
+				<li>
+					<a href="calender.html">
+						<i class="fa fa-dashboard"></i> <span>Calender</span>
+					</a>
+				</li>
+				<li>
+					<a href="falst.html">
+						<i class="fa fa-dashboard"></i> <span>Financial Advisors</span>
+					</a>
+				</li>
+				<li>
+					<a href="clientlst.html">
+						<i class="fa fa-dashboard"></i> <span>Clients</span>
+					</a>
+				</li>
                 <li>
-                    <a href="calender.html">
-                        <i class="fa fa-dashboard"></i> <span>Calender</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="falst.html">
-                        <i class="fa fa-dashboard"></i> <span>Financial Advisors</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="clientlst.html">
-                        <i class="fa fa-dashboard"></i> <span>Clients</span>
+                    <a href="browse-markets.html">
+                        <i class="fa fa-dashboard"></i> <span>Browse Markets</span>
                     </a>
                 </li>
             </ul>
             <!--Left navigation end-->
         </section>
-<!--Left navigation section end-->
+		
+        <!--Left navigation section end-->
 
 
         <!--Page main section start-->
@@ -333,83 +338,71 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!--Top header start-->
-                            <h3 class="ls-top-header">Table</h3>
+                            <h3 class="ls-top-header">StockBae Browse Markets</h3>
                             <!--Top header end -->
 
                             <!--Top breadcrumb start -->
                             <ol class="breadcrumb">
                                 <li><a href="#"><i class="fa fa-home"></i></a></li>
-                                <li class="active">Table</li>
+                                <li><a href="#">StockBae Browse Markets</a></li>
                             </ol>
                             <!--Top breadcrumb start -->
                         </div>
                     </div>
                     <!-- Main Content Element  Start-->
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Financial Advisor List</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <!--Table Wrapper Start-->
-                                    <div class="table-responsive ls-table">
-                                        @for($i = 0; $i<count($fas);$i++)
-
-                                            <table class="table table-bordered table-striped">
-                                                <thead>
-                                                <tr>
-                                                    <th>FA ID</th>
-                                                    <th>Name</th>
-                                                    <th>Email</th>
-                                                    <th>Address</th>
-                                                    <th>Date Of Birth</th>
-                                                    <th>Contact No.</th>
-                                                    <th>Start Date</th>
-                                                    <th>Salary /h</th>
-                                                    <th>National Insurance No.</th>
-                                                    <th class="text-center">Action</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                @for($i = 0; $i<count($fas);$i++)
-
-                                                    {{--            <p>{{ $fas[$i]->fa_id}}
-                                                                  {{ $fas [$i]->name}}
-                                                                  {{ $fas[$i]->email}}
-                                                                  {{ $fas[$i]->address}}</p>
-
-
-                                                   --}}
-                                                    <tr>
-                                                        <td>{{ $fas[$i]->fa_id}}</td>
-                                                        <td>{{ $fas[$i]->name}}</td>
-                                                        <td>{{ $fas[$i]->email}}</td>
-                                                        <td>{{ $fas[$i]->address}}</td>
-                                                        <td>{{ $fas[$i]->dob}}</td>
-                                                        <td>{{ $fas[$i]->contact_no}}</td>
-                                                        <td>{{ $fas[$i]->start_date}}</td>
-                                                        <td>{{ 100.69 }}</td>
-                                                        <td>{{ $fas[$i]->ni_no}}</td>
-                                                        <td>
-                                                            <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                            <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                            <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
-                                                        </td>
-
-                                                    </tr>
-                                                @endfor
-                                                </tbody>
-                                            </table>
-                                        @endfor
+                    <div class="col-md-12">
+                        <div class="row filter">
+                            <div class="col-md-12 ls-gallery-paddingless-wrap">
+                                <div class="row ls-gallery-filter-wrap">
+                                    <div class="col-md-6 ls-gallery-paddingless-wrap">
+                                        <!-- ls Gallery Filter wrapper Start-->
+                                        
+                                        <!-- ls Gallery Filter wrapper Finished-->
                                     </div>
-                                    <!--Table Wrapper Finish-->
+                                    <div class="col-md-6 ls-gallery-paddingless-wrap">
+                                        <!-- ls Gallery Search And Sort wrapper Start-->
+                                        <div class="ls-gallery-search">
+                                            <input class="filter__search js-shuffle-search" type="search" placeholder="Search Item.."/>
+                                            <!-- Sort Start -->
+                                            
+                                            <!-- Sort Finish -->
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-md-12">
+                                                <h3 class="ls-header">Microsoft Corporation</h3>
+                                                <p>
+                                                    <span class="about-me-text">NASDAQ: MSFT 
+                                                    </span>
+                                                </p>
+
+                                                <p>Open 128.25&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  733.34B <br>High 128.40&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 16.93 </br>Low 125.16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  1.49% 
+                                                    
+                                                </p>
+                                                <br>
+                                            </br>
+
+                                                <h3 class="ls-header">Apple Inc.</h3>
+                                                <p>
+                                                    <span class="about-me-text">NASDAQ: AAPL
+                                                    </span>
+                                                </p>
+
+                                                <p>Open 41.43&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  342.06B <br>High 42.83&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 17.15 </br>Low 41.33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  2.92%
+
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div id="user-locator" class="user-map-locator"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                     <!-- Main Content Element  End-->
 
                 </div>
@@ -435,181 +428,11 @@
             <!--Tab navigation end -->
 
             <!--Tab content start-->
-            <div class="tab-content">
-                <div class="tab-pane active" id="chatTab">
-                    <div class="nano">
-                        <div class="nano-content">
-                            <div class="chat-group chat-group-fav">
-                                <h3 class="ls-header">Favorites</h3>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-online"></span>
-                                    Catherine J. Watkins
-                                    <span class="badge badge-lightBlue">1</span>
-                                </a>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-idle"></span>
-                                    Fernando G. Olson
-                                </a>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-busy"></span>
-                                    Susan J. Best
-                                </a>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-offline"></span>
-                                    Brandon S. Young
-                                </a>
-                            </div>
-                            <div class="chat-group chat-group-coll">
-                                <h3 class="ls-header">Colleagues</h3>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-offline"></span>
-                                    Brandon S. Young
-                                </a>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-idle"></span>
-                                    Fernando G. Olson
-                                </a>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-online"></span>
-                                    Catherine J. Watkins
-                                    <span class="badge badge-lightBlue">3</span>
-                                </a>
-
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-busy"></span>
-                                    Susan J. Best
-                                </a>
-
-                            </div>
-                            <div class="chat-group chat-group-social">
-                                <h3 class="ls-header">Social</h3>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-online"></span>
-                                    Catherine J. Watkins
-                                    <span class="badge badge-lightBlue">5</span>
-                                </a>
-                                <a href="javascript:void(0)">
-                                    <span class="user-status is-busy"></span>
-                                    Susan J. Best
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="chat-box">
-                        <div class="chat-box-header">
-                            <h5>
-                                <span class="user-status is-online"></span>
-                                Catherine J. Watkins
-                            </h5>
-                        </div>
-
-                        <div class="chat-box-content">
-                            <div class="nano nano-chat">
-                                <div class="nano-content">
-
-                                    <ul>
-                                        <li>
-                                            <span class="user">Catherine</span>
-                                            <p>Are you here?</p>
-                                            <span class="time">10:10</span>
-                                        </li>
-                                        <li>
-                                            <span class="user">Catherine</span>
-                                            <p>Whohoo!</p>
-                                            <span class="time">10:12</span>
-                                        </li>
-                                        <li>
-                                            <span class="user">Catherine</span>
-                                            <p>This message is pre-queued.</p>
-                                            <span class="time">10:15</span>
-                                        </li>
-                                        <li>
-                                            <span class="user">Catherine</span>
-                                            <p>Do you like it?</p>
-                                            <span class="time">10:20</span>
-                                        </li>
-                                        <li>
-                                            <span class="user">Catherine</span>
-                                            <p>This message is pre-queued.</p>
-                                            <span class="time">11:00</span>
-                                        </li>
-                                        <li>
-                                            <span class="user">Catherine</span>
-                                            <p>Hi, you there ?</p>
-                                            <span class="time">12:00</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="chat-write">
-                        <textarea class="form-control autogrow" placeholder="Type your message"></textarea>
-                    </div>
-                </div>
-
-                <div class="tab-pane" id="settingTab">
-
-                    <div class="setting-box">
-                        <h3 class="ls-header">Account Setting</h3>
-                        <div class="setting-box-content">
-                            <ul>
-                                <li><span class="pull-left">Online status: </span><input type="checkbox" class="js-switch-red" checked/></li>
-                                <li><span class="pull-left">Show offline contact: </span><input type="checkbox" class="js-switch-light-blue" checked/></li>
-                                <li><span class="pull-left">Invisible mode: </span><input class="js-switch" type="checkbox" checked></li>
-                                <li><span class="pull-left">Log all message:</span><input class="js-switch-light-green" type="checkbox" checked></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="setting-box">
-                        <h3 class="ls-header">Maintenance</h3>
-                        <div class="setting-box-content">
-                            <div class="easy-pai-box">
-                                <span class="easyPieChart" data-percent="90">
-                                    <span class="easyPiePercent"></span>
-                                </span>
-                            </div>
-                            <div class="easy-pai-box">
-                                <button class="btn btn-xs ls-red-btn js_update">Update Data</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="setting-box">
-                        <h3 class="ls-header">Progress</h3>
-                        <div class="setting-box-content">
-
-                            <h5>File uploading</h5>
-                            <div class="progress">
-                                <div class="progress-bar ls-light-blue-progress six-sec-ease-in-out"
-                                     aria-valuetransitiongoal="10"></div>
-                            </div>
-
-                            <h5>Plugin setup</h5>
-                            <div class="progress progress-striped active">
-                                <div class="progress-bar six-sec-ease-in-out ls-light-green-progress"
-                                     aria-valuetransitiongoal="20"></div>
-                            </div>
-                            <h5>Post New Article</h5>
-                            <div class="progress progress-striped active">
-                                <div class="progress-bar ls-yellow-progress six-sec-ease-in-out"
-                                     aria-valuetransitiongoal="80"></div>
-                            </div>
-                            <h5>Create New User</h5>
-                            <div class="progress progress-striped active">
-                                <div class="progress-bar ls-red-progress six-sec-ease-in-out"
-                                     aria-valuetransitiongoal="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!--Tab content -->
         </section>
         <!--Right hidden  section end -->
+        
     </section>
 
     <!--Layout Script start -->
@@ -617,10 +440,6 @@
     <script type="text/javascript" src="assets/js/lib/jquery-1.11.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/multipleAccordion.js"></script>
-    <!--jqueryui for table start-->
-    <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <!--jqueryui for table end-->
-
 
     <!--easing Library Script Start -->
     <script src="assets/js/lib/jquery.easing.js"></script>
@@ -649,27 +468,19 @@
     <script type="text/javascript" src="assets/js/pages/layout.js"></script>
     <!--Layout Script End -->
 
-
-
-    <!--Drag & Drop & Sort  table start-->
-    <script src="assets/js/tsort.js"></script>
-    <script src="assets/js/jquery.tablednd.js"></script>
-    <script src="assets/js/jquery.dragtable.js"></script>
-    <!--Drag & Drop & Sort table end-->
-
-    <!--Editable-table Start-->
-    <script src="assets/js/editable-table/jquery.dataTables.js"></script>
-    <script src="assets/js/editable-table/jquery.validate.js"></script>
-    <script src="assets/js/editable-table/jquery.jeditable.js"></script>
-    <script src="assets/js/editable-table/jquery.dataTables.editable.js"></script>
-    <!--Editable-table Finish -->
-
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
-
-    <!--Demo table script start-->
-    <script src="assets/js/pages/table.js"></script>
-    <!--Demo table script end-->
+    <!--Gallery Plugin Start-->
+    <!-- Shuffle! -->
+    <script type="text/javascript" src="assets/js/gallery/shuffle.js"></script>
+    <!-- Syntax highlighting via Prism -->
+    <script  type="text/javascript" src="assets/js/gallery/prism.js"></script>
+    <script>var site_url = "fickle-2.html";</script>
+    <script type="text/javascript" src="assets/js/gallery/page.js"></script>
+    <script type="text/javascript" src="assets/js/gallery/evenheights.js"></script>
+    <!--Gallery Plugin Finish-->
+    <script type="text/javascript" src="assets/js/lightGallery.js"></script>
+    <!-- Gallery Js Call Start -->
+    <script type="text/javascript" src="assets/js/pages/demo.gallery.js"></script>
+    <!-- Gallery Js Finish -->
 </body>
 
 </html>
-
