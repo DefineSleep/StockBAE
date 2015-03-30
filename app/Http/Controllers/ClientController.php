@@ -46,6 +46,7 @@ class ClientController extends Controller {
         $client1 = Client::where('c_id','gh7')->update(['account_no'=>'383226677']);
         $client1 = Client::where('c_id','gh7')->update(['email'=>'wth@gmail.com']);
         return \View::make('clientlst')->with('clients',$clients);
+
     }
 
     /**

@@ -402,7 +402,7 @@
                                                 <td>
                                                     <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
                                                     <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                    {!! Form::open(['method' => 'POST', 'route' => ['fdelete',$fas[$i]->fa_id ]]) !!}
+                                                    {!! Form::open(['method' => 'POST', 'route' => ['fa/delete',$fas[$i]->fa_id ]]) !!}
                                                     {!! Form::submit('  ', ['class' => 'btn btn-xs btn-danger']) !!}
                                                     {!! Form::close() !!}
                                                     {{--<button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>--}}

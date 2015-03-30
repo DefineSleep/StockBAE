@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="http://localhost/StockBAE/public//images/ico/sb-icon-b.png">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
     <title>StockBae - Table</title>
 
@@ -402,6 +402,9 @@
                                                     <td>
                                                         <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
                                                         <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
+                                                        {!! Form::open(['method' => 'POST', 'route' => ['fa/delete',$fas[$i]->fa_id ]]) !!}
+                                                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+                                                        {!! Form::close() !!}
                                                         <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
                                                     </td>
 
@@ -677,5 +680,5 @@
     <script src="../../public/js/pages/table.js"></script>
     <!--Demo table script end-->
 </body>
-
+</body>
 </html>
