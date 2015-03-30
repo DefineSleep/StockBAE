@@ -19,13 +19,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="assets/images/ico/fab.ico">
+    <link rel="shortcut icon" href="../../public/images/ico/fab.ico">
 
     <title>StockBae - Login</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="assets/css/plugins/pace.css">
-    <script src="assets/js/pace.min.js"></script>
+    <script src="../../public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
@@ -107,15 +107,15 @@
 </section>
 
 </body>
-<script src="assets/js/lib/jquery-2.1.1.min.js"></script>
-<script src="assets/js/lib/jquery.easing.js"></script>
-<script src="assets/js/bootstrap-switch.min.js"></script>
+<script src="../../public/js/lib/jquery-2.1.1.min.js"></script>
+<script src="../../public/js/lib/jquery.easing.js"></script>
+<script src="../../public/js/bootstrap-switch.min.js"></script>
 <!--Script for notification start-->
-<script src="assets/js/loader/spin.js"></script>
-<script src="assets/js/loader/ladda.js"></script>
-<script src="assets/js/humane.min.js"></script>
+<script src="../../public/js/loader/spin.js"></script>
+<script src="../../public/js/loader/ladda.js"></script>
+<script src="../../public/js/humane.min.js"></script>
 <!--Script for notification end-->
 
-<script src="assets/js/pages/login.js"></script>
+<script src="../../public/js/pages/login.js"></script>
 
 </html>

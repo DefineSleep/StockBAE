@@ -20,18 +20,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- iOS webapp icons -->
-    <link rel="apple-touch-icon-precomposed" href="assets/images/ios/fickle-logo-72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ios/fickle-logo-72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ios/fickle-logo-114.png" />
+    <link rel="apple-touch-icon-precomposed" href="../../public/images/ios/fickle-logo-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../public/images/ios/fickle-logo-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../public/images/ios/fickle-logo-114.png" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="assets/images/ico/fab.ico">
+    <link rel="shortcut icon" href="../../public/images/ico/fab.ico">
 
     <title>Fickle - Flot Chart</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="assets/css/plugins/pace.css">
-    <script src="assets/js/pace.min.js"></script>
+    <script src="../../public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
@@ -106,7 +106,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar3-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar3-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress Theme
@@ -119,7 +119,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar2-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar2-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             PSD Designe
@@ -132,7 +132,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar1-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar1-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress PLugin
@@ -234,7 +234,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="email-top-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar3-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar3-80.png" alt="user image" />
                                         </div>
                                         <div class="email-top-content">
                                             John Doe <div>Sample Mail 1</div>
@@ -244,7 +244,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="email-top-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar2-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar2-80.png" alt="user image" />
                                         </div>
                                         <div class="email-top-content">
                                             John Doe <div>Sample Mail 2</div>
@@ -254,7 +254,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="email-top-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar1-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar1-80.png" alt="user image" />
                                         </div>
                                         <div class="email-top-content">
                                             John Doe <div> Sample Mail 4</div>
@@ -301,7 +301,7 @@
         <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
-                <img src="assets/images/userimage/avatar2-80.png" alt=""/>
+                <img src="../../public/images/userimage/avatar2-80.png" alt=""/>
                     <div class="user-online-status"><span class="user-status is-online  "></span> </div>
             </div>
             <ul class="social-icon">
@@ -843,46 +843,46 @@
     </section>
 
     <!--Layout Script start -->
-    <script type="text/javascript" src="assets/js/color.js"></script>
-    <script type="text/javascript" src="assets/js/lib/jquery-1.11.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/multipleAccordion.js"></script>
+    <script type="text/javascript" src="../../public/js/color.js"></script>
+    <script type="text/javascript" src="../../public/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../public/js/multipleAccordion.js"></script>
 
     <!--easing Library Script Start -->
-    <script src="assets/js/lib/jquery.easing.js"></script>
+    <script src="../../public/js/lib/jquery.easing.js"></script>
     <!--easing Library Script End -->
 
     <!--Nano Scroll Script Start -->
-    <script src="assets/js/jquery.nanoscroller.min.js"></script>
+    <script src="../../public/js/jquery.nanoscroller.min.js"></script>
     <!--Nano Scroll Script End -->
 
     <!--switchery Script Start -->
-    <script src="assets/js/switchery.min.js"></script>
+    <script src="../../public/js/switchery.min.js"></script>
     <!--switchery Script End -->
 
     <!--bootstrap switch Button Script Start-->
-    <script src="assets/js/bootstrap-switch.js"></script>
+    <script src="../../public/js/bootstrap-switch.js"></script>
     <!--bootstrap switch Button Script End-->
 
     <!--easypie Library Script Start -->
-    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="../../public/js/jquery.easypiechart.min.js"></script>
     <!--easypie Library Script Start -->
 
     <!--bootstrap-progressbar Library script Start-->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+    <script src="../../public/js/bootstrap-progressbar.min.js"></script>
     <!--bootstrap-progressbar Library script End-->
 
 
     <!--FLoat library Script Start -->
-    <script type="text/javascript" src="assets/js/chart/flot/jquery.flot.js"></script>
-    <script type="text/javascript" src="assets/js/chart/flot/jquery.flot.pie.js"></script>
-    <script type="text/javascript" src="assets/js/chart/flot/jquery.flot.resize.js"></script>
+    <script type="text/javascript" src="../../public/js/chart/flot/jquery.flot.js"></script>
+    <script type="text/javascript" src="../../public/js/chart/flot/jquery.flot.pie.js"></script>
+    <script type="text/javascript" src="../../public/js/chart/flot/jquery.flot.resize.js"></script>
     <!--FLoat library Script End -->
-    <script type="text/javascript" src="assets/js/pages/layout.js"></script>
+    <script type="text/javascript" src="../../public/js/pages/layout.js"></script>
 
 
     <!--Float chart demo script start-->
-    <script type="text/javascript" src="assets/js/pages/demo.flotchart.js"></script>
+    <script type="text/javascript" src="../../public/js/pages/demo.flotchart.js"></script>
     <!--Float chart demo script End-->
 </body>
 

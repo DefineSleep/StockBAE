@@ -19,13 +19,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="assets/images/ico/sb-icon-b.png">
+    <link rel="shortcut icon" href="../../public/images/ico/sb-icon-b.png">
 
     <title>StockBae - Calender</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="assets/css/plugins/pace.css">
-    <script src="assets/js/pace.min.js"></script>
+    <script src="../../public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -100,7 +100,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar3-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar3-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress Theme
@@ -113,7 +113,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar2-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar2-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             PSD Designe
@@ -126,7 +126,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="assets/images/userimage/avatar1-80.png" alt="user image" />
+                                            <img class="rounded" src="../../public/images/userimage/avatar1-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress PLugin
@@ -271,7 +271,7 @@
        <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
-                <img src="assets/images/userimage/avatar2-80.png" alt=""/>
+                <img src="../../public/images/userimage/avatar2-80.png" alt=""/>
                
             </div>
            
@@ -618,59 +618,59 @@
     </section>
 
     <!--Layout Script start -->
-    <script type="text/javascript" src="assets/js/color.js"></script>
-    <script type="text/javascript" src="assets/js/lib/jquery-1.11.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/multipleAccordion.js"></script>
+    <script type="text/javascript" src="../../public/js/color.js"></script>
+    <script type="text/javascript" src="../../public/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../public/js/multipleAccordion.js"></script>
 
     <!--jquery-ui library script for calender start-->
-    <script src="assets/js/lib/jqueryui.js"></script>
+    <script src="../../public/js/lib/jqueryui.js"></script>
     <!--jquery-ui library script for calender end-->
 
     <!--easing Library Script Start -->
-    <script src="assets/js/lib/jquery.easing.js"></script>
+    <script src="../../public/js/lib/jquery.easing.js"></script>
     <!--easing Library Script End -->
 
     <!--Nano Scroll Script Start -->
-    <script src="assets/js/jquery.nanoscroller.min.js"></script>
+    <script src="../../public/js/jquery.nanoscroller.min.js"></script>
     <!--Nano Scroll Script End -->
 
     <!--switchery Script Start -->
-    <script src="assets/js/switchery.min.js"></script>
+    <script src="../../public/js/switchery.min.js"></script>
     <!--switchery Script End -->
 
     <!--bootstrap switch Button Script Start-->
-    <script src="assets/js/bootstrap-switch.js"></script>
+    <script src="../../public/js/bootstrap-switch.js"></script>
     <!--bootstrap switch Button Script End-->
 
     <!--easypie Library Script Start -->
-    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="../../public/js/jquery.easypiechart.min.js"></script>
     <!--easypie Library Script Start -->
 
     <!--bootstrap-progressbar Library script Start-->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+    <script src="../../public/js/bootstrap-progressbar.min.js"></script>
     <!--bootstrap-progressbar Library script End-->
 
-    <script type="text/javascript" src="assets/js/pages/layout.js"></script>
+    <script type="text/javascript" src="../../public/js/pages/layout.js"></script>
     <!--Layout Script End -->
 
-    <script src="assets/js/lib/modernizr.js"></script>
+    <script src="../../public/js/lib/modernizr.js"></script>
 
 
     <!--BootBox script for calender start-->
-    <script src="assets/js/bootbox.min.js"></script>
+    <script src="../../public/js/bootbox.min.js"></script>
     <!--BootBox script for calender End-->
 
     <!--full calender library script start-->
-    <script src="assets/js/fullcalendar.min.js"></script>
+    <script src="../../public/js/fullcalendar.min.js"></script>
     <!--full calender library script start-->
 
     <!--calendario library script start-->
-    <script src="assets/js/jquery.calendario.js"></script>
-    <script src="assets/js/data.js"></script>
+    <script src="../../public/js/jquery.calendario.js"></script>
+    <script src="../../public/js/data.js"></script>
     <!--calendario library script end-->
 
-    <script src="assets/js/pages/calender.js"></script>
+    <script src="../../public/js/pages/calender.js"></script>
 </body>
 
 </html>
