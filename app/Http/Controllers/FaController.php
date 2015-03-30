@@ -56,13 +56,13 @@ class FaController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function delete()
+	public function delete($id)
 	{
         $fas = Fa::all()->first()
 
             //->where('users.name', '=', 'abc')
             ->get();
-        $fa = Fa::where('fa_id',"ff69");
+        $fa = Fa::where('fa_id',$id);
         $fa->delete();
         return \View::make('falst')->with('fas',$fas);
 	}

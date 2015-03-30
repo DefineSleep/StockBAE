@@ -18,7 +18,7 @@ Route::get('/cadd', 'ClientController@add');
 Route::get('/', 'ClientController@index');
 Route::get('/fview', 'FaController@index');
 Route::get('/fedit', 'FaController@edit');
-Route::get('/fdelete', 'FaController@delete');
+Route::post('/fdelete{id}', 'FaController@delete');
 Route::get('/fadd', 'FaController@add');
 
 Route::get('home', 'HomeController@index');

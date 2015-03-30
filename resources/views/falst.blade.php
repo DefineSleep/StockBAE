@@ -346,7 +346,7 @@
                     </div>
                     <!-- Main Content Element  Start-->
 
-                    <div <div class="row">
+                     <div class="row">
                         {{--<div class="col-md-12">--}}
                         <div class="panel panel-default">
                             <div class="panel-heading row">
@@ -402,7 +402,10 @@
                                                 <td>
                                                     <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
                                                     <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
+                                                    {!! Form::open(['method' => 'POST', 'route' => ['fdelete',$fas[$i]->fa_id ]]) !!}
+                                                    {!! Form::submit('  ', ['class' => 'btn btn-xs btn-danger']) !!}
+                                                    {!! Form::close() !!}
+                                                    {{--<button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>--}}
                                                 </td>
 
                                             </tr>
@@ -677,6 +680,6 @@
     <script src="http://localhost/StockBAE/public/js/pages/table.js"></script>
     <!--Demo table script end-->
 </body>
-
+</body>
 </html>
 
