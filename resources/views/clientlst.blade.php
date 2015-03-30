@@ -19,29 +19,29 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="../../public/images/ico/sb-icon-b.png">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public//images/ico/sb-icon-b.png">
 
     <title>StockBae - Table</title>
 
     <!--Page loading plugin Start -->
-    <link rel="stylesheet" href="assets/css/plugins/pace.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
     <script src="../../public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap-progressbar-3.1.1.css">
-    <link rel="stylesheet" href="assets/css/plugins/dndTable.css">
-    <link rel="stylesheet" href="assets/css/plugins/tsort.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/bootstrap-progressbar-3.1.1.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/dndTable.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/tsort.css">
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/style.css" rel="stylesheet">
     <!-- Custom styles Style End-->
 
     <!-- Responsive Style For-->
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/responsive.css" rel="stylesheet">
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
@@ -102,7 +102,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="../../public/images/userimage/avatar3-80.png" alt="user image" />
+                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar3-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress Theme
@@ -115,7 +115,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="../../public/images/userimage/avatar2-80.png" alt="user image" />
+                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             PSD Designe
@@ -128,7 +128,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="../../public/images/userimage/avatar1-80.png" alt="user image" />
+                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar1-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress PLugin
@@ -278,7 +278,7 @@
 <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
-                <img src="../../public/images/userimage/avatar2-80.png" alt=""/>
+                <img src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt=""/>
                
             </div>
            
@@ -347,10 +347,26 @@
                     <!-- Main Content Element  Start-->
 
                     <div class="row">
-                        <div class="col-md-12">
+                        {{--<div class="col-md-12">--}}
                             <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Client List</h3>
+                                <div class="panel-heading row">
+                                    <div class="col-md-2"><h3 class="panel-title">Client List</h3></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-2">
+                                        <a href="compose-mail.html"><i class="glyphicon glyphicon-plus"></i> <span>Add New Client</span></a>
+                                    </div>
+                                </div>
+
+
+
+                                    {{--<h3 class="panel-title">Client List</h3>--}}
                                 </div>
                                 <div class="panel-body">
                                     <!--Table Wrapper Start-->
@@ -358,8 +374,8 @@
                                         <table class="table table-bordered table-striped">
                                             <thead>
                                             <tr>
-                                                <th>User ID</th>
-                                                <th>Password</th>
+                                                <th>CID</th>
+                                                <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Address</th>
                                                 <th>Date Of Birth</th>
@@ -371,99 +387,34 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
-                                                </td>
+                                            @for($i = 0; $i<count($clients);$i++)
 
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
-                                                </td>
+                                                <tr>
+                                                    <td>{{ $clients[$i]->c_id}}</td>
+                                                    <td>{{ $clients[$i]->name}}</td>
+                                                    <td>{{ $clients[$i]->email}}</td>
+                                                    <td>{{ $clients[$i]->address}}</td>
+                                                    <td>{{ $clients[$i]->dob}}</td>
+                                                    <td>{{ $clients[$i]->account_no}}</td>
+                                                    <td>{{ $clients[$i]->ni_no}}</td>
+                                                    <td>{{ $clients[$i]->contact_no}}</td>
+                                                    <td>{{ $clients[$i]->networth}}</td>
+                                                    <td>
+                                                        <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
+                                                        <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
+                                                        <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
+                                                    </td>
 
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                    <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                    <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
-                                                </td>
-
-                                            </tr>
-                                            
+                                                </tr>
+                                            @endfor
                                             </tbody>
                                         </table>
+
                                     </div>
                                     <!--Table Wrapper Finish-->
                                 </div>
                             </div>
-                        </div>
+                        {{--</div>--}}
                     </div>
 
                     <!-- Main Content Element  End-->

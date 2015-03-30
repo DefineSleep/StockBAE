@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="http://localhost/StockBAE/public/css/images/ico/sb-icon-b.png">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
     <title>StockBae - Table</title>
 
@@ -346,12 +346,20 @@
                     </div>
                     <!-- Main Content Element  Start-->
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Financial Advisor List</h3>
-                                </div>
+                    <div <div class="row">
+                        {{--<div class="col-md-12">--}}
+                        <div class="panel panel-default">
+                            <div class="panel-heading row">
+                                <div class="col-md-2"><h3 class="panel-title">Financial Advisors List</h3></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-2"> <a href="compose-mail.html"><i class="glyphicon glyphicon-plus"></i> <span>Add New Financial Advisor</span></a></div></div>
                                 <div class="panel-body">
                                     <!--Table Wrapper Start-->
                                     <div class="table-responsive ls-table">

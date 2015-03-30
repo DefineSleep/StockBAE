@@ -11,10 +11,15 @@
 |
 */
 /*Route::get('/', 'HomeController@index');*/
-Route::get('/', 'FaController@index');
-Route::get('/edit', 'FaController@edit');
-Route::get('/delete', 'FaController@delete');
-Route::get('/add', 'FaController@add');
+Route::get('/cview', 'ClientController@index');
+Route::get('/cedit', 'ClientController@edit');
+Route::get('/cdelete', 'ClientController@delete');
+Route::get('/cadd', 'ClientController@add');
+Route::get('/', 'ClientController@index');
+Route::get('/fview', 'FaController@index');
+Route::get('/fedit', 'FaController@edit');
+Route::get('/fdelete', 'FaController@delete');
+Route::get('/fadd', 'FaController@add');
 
 Route::get('home', 'HomeController@index');
 
