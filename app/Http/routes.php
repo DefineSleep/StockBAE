@@ -11,7 +11,7 @@
 |
 */
 /*Route::get('/', 'HomeController@index');*/
-Route::get('/', 'ClientController@index');
+Route::get('/', 'WelcomeController@index');
 
 Route::get('client', 'ClientController@index');
 Route::get('client/add', 'ClientController@add');

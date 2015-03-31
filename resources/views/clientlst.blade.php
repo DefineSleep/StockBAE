@@ -316,7 +316,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="clientlst.html">
+                    <a href="client">
                         <i class="fa fa-dashboard"></i> <span>Clients</span>
                     </a>
                 </li>
@@ -402,9 +402,6 @@
                                                     <td>
                                                         <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
                                                         <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                        {!! Form::open(['method' => 'POST', 'route' => ['fa/delete',$fas[$i]->fa_id ]]) !!}
-                                                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                                                        {!! Form::close() !!}
                                                         <button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>
                                                     </td>
 
