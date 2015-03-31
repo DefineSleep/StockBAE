@@ -19,34 +19,34 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/fab.ico">
+    <link rel="shortcut icon" href="assets/images/ico/fab.ico">
 
     <title>StockBae - Company Profile</title>
 
     <!--Page loading plugin Start -->
-    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
-    <script src="http://localhost/StockBAE/public/js/pace.min.js"></script>
+    <link rel="stylesheet" href="assets/css/plugins/pace.css">
+    <script src="assets/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
-    <link href="http://localhost/StockBAE/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/lightGallery.css">
-    <!--[if gt IE 8]> <link href="http://localhost/StockBAE/public/css/ie/ie9-gallery.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
+    <link rel="stylesheet" href="assets/css/plugins/lightGallery.css">
+    <!--[if gt IE 8]> <link href="assets/css/ie/ie9-gallery.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
 
-    <link href="http://localhost/StockBAE/public/css/plugins/shuffle.css" rel="stylesheet">
+    <link href="assets/css/plugins/shuffle.css" rel="stylesheet">
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
-    <link href="http://localhost/StockBAE/public/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <!-- Custom styles Style End-->
 
     <!-- Responsive Style For-->
-    <link href="http://localhost/StockBAE/public/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
-    <script src="http://localhost/StockBAE/public/js/lib/modernizr.js"></script>
+    <script src="assets/js/lib/modernizr.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -103,7 +103,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar3-80.png" alt="user image" />
+                                            <img class="rounded" src="assets/images/userimage/avatar3-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress Theme
@@ -116,7 +116,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt="user image" />
+                                            <img class="rounded" src="assets/images/userimage/avatar2-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             PSD Designe
@@ -129,7 +129,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar1-80.png" alt="user image" />
+                                            <img class="rounded" src="assets/images/userimage/avatar1-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress PLugin
@@ -276,7 +276,7 @@
         <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
-                <img src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt=""/>
+                <img src="assets/images/userimage/avatar2-80.png" alt=""/>
                
             </div>
            
@@ -369,21 +369,103 @@
                                         </div>
 
                                     </div>
-                                    
-                                    </script><span class="add-to-portfolio-button"><a class="add-to-portfolio-icon" href="http://edit.finance.yahoo.com/ec?.src=quote&amp;.intl=us&amp;.sym=AAPL&amp;.done=http%3A%2F%2Ffinance.yahoo.com%2Fq%3Fs%3DAAPL%26reco%3D1"></a></span></div></div></div></div><div class="yui-u first yfi-start-content"><div class="yfi_quote_summary"><div id="yfi_quote_summary_data" class="rtq_table"><table id="table1"><tr><th scope="row" width="48%">Prev Close:</th><td class="yfnc_tabledata1">127.50</td></tr><tr><th scope="row" width="48%">Open:</th><td class="yfnc_tabledata1">128.26</td></tr><tr><th scope="row" width="48%">Bid:</th><td class="yfnc_tabledata1"><span id="yfs_b00_aapl">126.25</span><small> x <span id="yfs_b60_aapl">5100</span></small></td></tr><tr><th scope="row" width="48%">Ask:</th><td class="yfnc_tabledata1"><span id="yfs_a00_aapl">126.56</span><small> x <span id="yfs_a50_aapl">200</span></small></td></tr><tr><th scope="row" width="48%">1y Target Est:</th><td class="yfnc_tabledata1">139.05</td></tr><tr><th scope="row" width="48%">Beta:</th><td class="yfnc_tabledata1">0.96</td></tr><tr><th scope="row" width="54%">Earnings Date:</th><td class="yfnc_tabledata1">Apr 21 - Apr 27 (Est.)</td></tr></table><table id="table2"><tr><th scope="row" width="48%">Day's Range:</th><td class="yfnc_tabledata1"><span><span id="yfs_g53_aapl">125.16</span></span> - <span><span id="yfs_h53_aapl">128.40</span></span></td></tr><tr><th scope="row" width="48%">52wk Range:</th><td class="yfnc_tabledata1"><span>73.05</span> - <span>133.60</span></td></tr><tr><th scope="row" width="48%">Volume:</th><td class="yfnc_tabledata1"><span id="yfs_v53_aapl">68,703,101</span></td></tr><tr><th scope="row" width="48%">Avg Vol <span class="small">(3m)</span>:</th><td class="yfnc_tabledata1">57,362,500</td></tr><tr><th scope="row" width="48%">Market Cap:</th><td class="yfnc_tabledata1"><span id="yfs_j10_aapl">733.34B</span></td></tr><tr><th scope="row" width="48%">P/E <span class="small">(ttm)</span>:</th><td class="yfnc_tabledata1">17.05</td></tr><tr><th scope="row" width="48%">EPS <span class="small">(ttm)</span>:</th><td class="yfnc_tabledata1">7.39</td></tr><tr class="end"><th scope="row" width="48%">Div &amp; Yield:</th><td class="yfnc_tabledata1">1.88 (1.50%) </td></tr></table></div></div><div class="yui-g" id="yfi_related_tickers">
 
-                                    <script id="mNCC" type="text/javascript"> 
-                    medianet_width='475';
-                    medianet_height= '200';
-                    medianet_crid='625102783';
-                    medianet_divid = 'yfi_media_net';
-                </script><script type="text/javascript">
-                ll_js.push({
-                    'file':'//mycdn.media.net/dmedianet.js?cid=8CUJ144F7'
-                });
-                </script></div><div class="yui-u rr" style="width:300px;float:left;"><div class="yfi_summary_chart" style="float:none;" id="yfi_summary_chart"><div class="chart"><a href="echarts?s=AAPL+Interactive#symbol=AAPL;range=1d"><img src="http://chart.finance.yahoo.com/t?s=AAPL&amp;lang=en-US&amp;region=US&amp;width=300&amp;height=180" alt="Apple Inc. (AAPL)" width="300" height="180"></a><div id="display_links" class="display_links"><ul><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=1d">1d</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=5d">5d</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=1m">1m</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=3m">3m</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=6m">6m</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=1y">1y</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=2y">2y</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=5y">5y</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range=my">max</a></li><li><a href="/echarts?s=AAPL+Interactive#symbol=AAPL;range="></a></li></ul>s
+                                    <div class="buy-share-button">
+                                        <button id="release" type="button" class="btn ls-light-green-btn">Buy Shares</button>
+                                        <button id="reset" type="button" class="btn btn-warning">Sell Shares</button>
+                                        <!--<button id="Sell Shares" type="button" class="btn ls-red-btn">Destroy</button>-->
                                     </div>
 
+                                    <br></br>
+
+                                    <!-- imgbit -->
+
+                                        <div class="row">
+                                <div class="col-md-5"><div class="graph-img">
+                                        <img src="../../public/images/chart.png" alt=""/>
+                                    </div></div>
+                                <div class="col-md-3">
+                                    <table class="table">
+                                        <tr>
+                                            <td>Symbol</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Name</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Last Trade Price</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Last Trade Date</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Last Trade Time</td>
+                                            <td></td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <table class="table">
+                                        <tr>
+                                            <td>Change Price</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Change Percentage</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Days High</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Days Low</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Volume</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Stock Exchange</td>
+                                            <td></td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+
+                                <div class="col-md-1"></div>
+
+                            
+                                
+                                    <!-- imgbit end -->
+
+                                    <br></br>
+                                    
+                                    </script>
+
+
+                            <div class="ls-user-info col-md-6 col-sm-7">
+                                        <div class="ls-user-text">
+                                            
+                                            <p>Apple Inc. is an American multinational corporation headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, online services, and personal computers.</p>
+
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -412,60 +494,56 @@
                 <li><a href="#settingTab" data-toggle="tab"><i class="fa fa-cogs"></i> Setting</a></li>
             </ul>
             <!--Tab navigation end -->
-
-            <!--Tab content start-->
-            
-            <!--Tab content -->
         </section>
         <!--Right hidden  section end -->
         
     </section>
 
     <!--Layout Script start -->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/color.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/lib/jquery-1.11.min.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/multipleAccordion.js"></script>
+    <script type="text/javascript" src="assets/js/color.js"></script>
+    <script type="text/javascript" src="assets/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/multipleAccordion.js"></script>
 
     <!--easing Library Script Start -->
-    <script src="http://localhost/StockBAE/public/js/lib/jquery.easing.js"></script>
+    <script src="assets/js/lib/jquery.easing.js"></script>
     <!--easing Library Script End -->
 
     <!--Nano Scroll Script Start -->
-    <script src="http://localhost/StockBAE/public/js/jquery.nanoscroller.min.js"></script>
+    <script src="assets/js/jquery.nanoscroller.min.js"></script>
     <!--Nano Scroll Script End -->
 
     <!--switchery Script Start -->
-    <script src="http://localhost/StockBAE/public/js/switchery.min.js"></script>
+    <script src="assets/js/switchery.min.js"></script>
     <!--switchery Script End -->
 
     <!--bootstrap switch Button Script Start-->
-    <script src="http://localhost/StockBAE/public/js/bootstrap-switch.js"></script>
+    <script src="assets/js/bootstrap-switch.js"></script>
     <!--bootstrap switch Button Script End-->
 
     <!--easypie Library Script Start -->
-    <script src="http://localhost/StockBAE/public/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--easypie Library Script Start -->
 
     <!--bootstrap-progressbar Library script Start-->
-    <script src="http://localhost/StockBAE/public/js/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
     <!--bootstrap-progressbar Library script End-->
 
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/layout.js"></script>
+    <script type="text/javascript" src="assets/js/pages/layout.js"></script>
     <!--Layout Script End -->
 
     <!--Gallery Plugin Start-->
     <!-- Shuffle! -->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/shuffle.js"></script>
+    <script type="text/javascript" src="assets/js/gallery/shuffle.js"></script>
     <!-- Syntax highlighting via Prism -->
-    <script  type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/prism.js"></script>
+    <script  type="text/javascript" src="assets/js/gallery/prism.js"></script>
     <script>var site_url = "fickle-2.html";</script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/page.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/evenheights.js"></script>
+    <script type="text/javascript" src="assets/js/gallery/page.js"></script>
+    <script type="text/javascript" src="assets/js/gallery/evenheights.js"></script>
     <!--Gallery Plugin Finish-->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/lightGallery.js"></script>
+    <script type="text/javascript" src="assets/js/lightGallery.js"></script>
     <!-- Gallery Js Call Start -->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/demo.gallery.js"></script>
+    <script type="text/javascript" src="assets/js/pages/demo.gallery.js"></script>
     <!-- Gallery Js Finish -->
 </body>
 

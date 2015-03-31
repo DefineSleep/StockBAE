@@ -371,7 +371,7 @@
                             <i class="fa fa-users"></i>
                             <h4>No. of Investments</h4>
                         </div>
-                        <div class="memberBox-value up"><i class="fa fa-user"></i> <span>{{ $portfolio_data->count  }}</span></div>
+                        <div class="memberBox-value up"><i class="fa fa-user"></i> <span>{{ $portfolio_data->$count  }}</span></div>
                     </li>
                     <li>
                         <div class="memberBox-title">
@@ -385,7 +385,7 @@
                             <i class="fa fa-shopping-cart"></i>
                             <h4>Networth</h4>
                         </div>
-                        <div class="memberBox-value up"><i class="fa  fa-money"></i> <span>${{$portfolio_data->sum}}</span></div>
+                        <div class="memberBox-value up"><i class="fa  fa-money"></i> <span>${{$portfolio_data->$sum}}</span></div>
                     </li>
                 </ul>
             </div>

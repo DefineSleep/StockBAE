@@ -19,34 +19,34 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/fab.ico">
+    <link rel="shortcut icon" href="assets/images/ico/fab.ico">
 
     <title>StockBae - Browse Markets</title>
 
     <!--Page loading plugin Start -->
-    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
-    <script src="http://localhost/StockBAE/public/js/pace.min.js"></script>
+    <link rel="stylesheet" href="assets/css/plugins/pace.css">
+    <script src="assets/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
-    <link href="http://localhost/StockBAE/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/lightGallery.css">
-    <!--[if gt IE 8]> <link href="http://localhost/StockBAE/public/css/ie/ie9-gallery.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
+    <link rel="stylesheet" href="assets/css/plugins/lightGallery.css">
+    <!--[if gt IE 8]> <link href="assets/css/ie/ie9-gallery.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
 
-    <link href="http://localhost/StockBAE/public/css/plugins/shuffle.css" rel="stylesheet">
+    <link href="assets/css/plugins/shuffle.css" rel="stylesheet">
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
-    <link href="http://localhost/StockBAE/public/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <!-- Custom styles Style End-->
 
     <!-- Responsive Style For-->
-    <link href="http://localhost/StockBAE/public/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
-    <script src="http://localhost/StockBAE/public/js/lib/modernizr.js"></script>
+    <script src="assets/js/lib/modernizr.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,7 +62,7 @@
             <!--Logo text start-->
             <div class="header-logo">
                 <a href="index.html" title="">
-                    <h1>StockBAE</h1>
+                    <h1>StockBae</h1>
                 </a>
             </div>
             <!--Logo text End-->
@@ -103,7 +103,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar3-80.png" alt="user image" />
+                                            <img class="rounded" src="assets/images/userimage/avatar3-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress Theme
@@ -116,7 +116,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt="user image" />
+                                            <img class="rounded" src="assets/images/userimage/avatar2-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             PSD Designe
@@ -129,7 +129,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar1-80.png" alt="user image" />
+                                            <img class="rounded" src="assets/images/userimage/avatar1-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress PLugin
@@ -276,7 +276,7 @@
         <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
-                <img src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt=""/>
+                <img src="assets/images/userimage/avatar2-80.png" alt=""/>
                
             </div>
            
@@ -371,17 +371,10 @@
                                     </div>
                                     <div class="row">
                                             <div class="col-md-12">
-                                                <h3 class="ls-header">Microsoft Corporation</h3>
-                                                <p>
-                                                    <span class="about-me-text">NASDAQ: MSFT 
-                                                    </span>
-                                                </p>
 
-                                                <p>Open 128.25&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  733.34B <br>High 128.40&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 16.93 </br>Low 125.16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  1.49% 
-                                                    
+                                                <p>
+                                                    Search results for 'AAPL'..
                                                 </p>
-                                                <br>
-                                            </br>
 
                                                 <h3 class="ls-header">Apple Inc.</h3>
                                                 <p>
@@ -389,9 +382,69 @@
                                                     </span>
                                                 </p>
 
-                                                <p>Open 41.43&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  342.06B <br>High 42.83&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 17.15 </br>Low 41.33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  2.92%</p>
+                                                <p>Open 41.43&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  342.06B <br>High 42.83&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 17.15 </br>Low 41.33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  2.92% 
+                                                </p>
+
+                                                <br>
+                                                </br>
+                                                <p>
+                                                    Similar searches include..
+                                                </p>
+
+                                                <br>
+                                                </br>
+
+                                                <h3 class="ls-header">Microsoft Corporation</h3>
+                                                <p>
+                                                    <span class="about-me-text">NASDAQ: MSFT
+                                                    </span>
+                                                </p>
+
+                                                </p>
+
+                                                <p>Open 128.25&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  733.34B <br>High 128.40&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 16.93 </br>Low 125.16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  1.49% 
+                                                    
+                                                </p> 
+
+                                                <br>
+                                                </br>
 
                                             </div>
+                                        </div>
+
+                                            <h3 class="ls-header">Samsung Electronics Co Ltd</h3>
+                                                <p>
+                                                    <span class="about-me-text">KRX: 005930
+                                                    </span>
+                                                </p>
+
+                                                </p>
+
+                                                <p>Open 1,449,000&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  236.17T <br>High 1,452,000 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 9.41 </br>Low 1,430,000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  1.39% 
+                                                    
+                                                </p> 
+
+                                                <br>
+                                                </br>
+
+                                            </div> 
+
+                                            </div>
+
+                                            <h3 class="ls-header">Hewlett-Packard</h3>
+                                                <p>
+                                                    <span class="about-me-text">NYSE: HPQ
+                                                    </span>
+                                                </p>
+
+                                                <p>Open 31.88&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Market cap  57.23B <br>High 31.98&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P/E ratio (ttm) 12.08 </br>Low 31.48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dividend yield  2.03% 
+                                                </p>
+
+                                                <br>
+                                                </br>
+
+                                            </div>
+
                                             <div class="col-md-5">
                                                 <div id="user-locator" class="user-map-locator"></div>
                                             </div>
@@ -436,50 +489,50 @@
     </section>
 
     <!--Layout Script start -->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/color.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/lib/jquery-1.11.min.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/multipleAccordion.js"></script>
+    <script type="text/javascript" src="assets/js/color.js"></script>
+    <script type="text/javascript" src="assets/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/multipleAccordion.js"></script>
 
     <!--easing Library Script Start -->
-    <script src="http://localhost/StockBAE/public/js/lib/jquery.easing.js"></script>
+    <script src="assets/js/lib/jquery.easing.js"></script>
     <!--easing Library Script End -->
 
     <!--Nano Scroll Script Start -->
-    <script src="http://localhost/StockBAE/public/js/jquery.nanoscroller.min.js"></script>
+    <script src="assets/js/jquery.nanoscroller.min.js"></script>
     <!--Nano Scroll Script End -->
 
     <!--switchery Script Start -->
-    <script src="http://localhost/StockBAE/public/js/switchery.min.js"></script>
+    <script src="assets/js/switchery.min.js"></script>
     <!--switchery Script End -->
 
     <!--bootstrap switch Button Script Start-->
-    <script src="http://localhost/StockBAE/public/js/bootstrap-switch.js"></script>
+    <script src="assets/js/bootstrap-switch.js"></script>
     <!--bootstrap switch Button Script End-->
 
     <!--easypie Library Script Start -->
-    <script src="http://localhost/StockBAE/public/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--easypie Library Script Start -->
 
     <!--bootstrap-progressbar Library script Start-->
-    <script src="http://localhost/StockBAE/public/js/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
     <!--bootstrap-progressbar Library script End-->
 
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/layout.js"></script>
+    <script type="text/javascript" src="assets/js/pages/layout.js"></script>
     <!--Layout Script End -->
 
     <!--Gallery Plugin Start-->
     <!-- Shuffle! -->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/shuffle.js"></script>
+    <script type="text/javascript" src="assets/js/gallery/shuffle.js"></script>
     <!-- Syntax highlighting via Prism -->
-    <script  type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/prism.js"></script>
+    <script  type="text/javascript" src="assets/js/gallery/prism.js"></script>
     <script>var site_url = "fickle-2.html";</script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/page.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/evenheights.js"></script>
+    <script type="text/javascript" src="assets/js/gallery/page.js"></script>
+    <script type="text/javascript" src="assets/js/gallery/evenheights.js"></script>
     <!--Gallery Plugin Finish-->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/lightGallery.js"></script>
+    <script type="text/javascript" src="assets/js/lightGallery.js"></script>
     <!-- Gallery Js Call Start -->
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/demo.gallery.js"></script>
+    <script type="text/javascript" src="assets/js/pages/demo.gallery.js"></script>
     <!-- Gallery Js Finish -->
 </body>
 

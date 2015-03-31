@@ -91,6 +91,7 @@ class SharesListController extends Controller {
             ->join('stocks', 'shares_list.symbol', '=', 'stocks.symbol')
             ->where('shares_list.c_id','=', 'sm709')
             ->count();
+
         $portfolio_data = array(
             'count'  => $count,
             'sum'   => $sum
