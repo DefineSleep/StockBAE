@@ -10,8 +10,15 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-/*Route::get('/', 'HomeController@index');*/
-Route::get('/', 'SharesListController@networth');
+
+Route::get('/', 'WelcomeController@index');
+/*
+Route::get('/', 'SharesListController@networth');*/
+
+Route::get('calendar', 'MeetingController@index');
+Route::get('calendar/add', 'MeetingController@add');
+Route::get('calendar/edit', 'MeetingController@edit');
+Route::get('calendar/delete', 'MeetingController@delete');
 
 Route::get('client', 'ClientController@index');
 Route::get('client/add', 'ClientController@add');

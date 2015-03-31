@@ -19,28 +19,28 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="../../public/images/ico/sb-icon-b.png">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
     <title>StockBae - Calender</title>
 
     <!--Page loading plugin Start -->
-    <link rel="stylesheet" href="assets/css/plugins/pace.css">
-    <script src="../../public/js/pace.min.js"></script>
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
+    <script src="http://localhost/StockBAE/public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin Css Put Here -->
-    <link rel="stylesheet" href="assets/css/plugins/fullcalendar/fullcalendar.css">
-    <link rel="stylesheet" href="assets/css/plugins/fullcalendar/fullcalendar.print.css">
-    <link rel="stylesheet" href="assets/css/plugins/calendario/ls-calendario.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/fullcalendar/fullcalendar.print.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/calendario/ls-calendario.css">
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/style.css" rel="stylesheet">
     <!-- Custom styles Style End-->
 
     <!-- Responsive Style For-->
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/responsive.css" rel="stylesheet">
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
@@ -100,7 +100,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="../../public/images/userimage/avatar3-80.png" alt="user image" />
+                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar3-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress Theme
@@ -113,7 +113,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="../../public/images/userimage/avatar2-80.png" alt="user image" />
+                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             PSD Designe
@@ -126,7 +126,7 @@
                                 <li>
                                     <a href="javascript:void(0)">
                                         <div class="goal-user-image">
-                                            <img class="rounded" src="../../public/images/userimage/avatar1-80.png" alt="user image" />
+                                            <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar1-80.png" alt="user image" />
                                         </div>
                                         <div class="goal-content">
                                             Wordpress PLugin
@@ -271,7 +271,7 @@
        <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
-                <img src="../../public/images/userimage/avatar2-80.png" alt=""/>
+                <img src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt=""/>
                
             </div>
            
@@ -618,59 +618,59 @@
     </section>
 
     <!--Layout Script start -->
-    <script type="text/javascript" src="../../public/js/color.js"></script>
-    <script type="text/javascript" src="../../public/js/lib/jquery-1.11.min.js"></script>
-    <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../public/js/multipleAccordion.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/color.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/multipleAccordion.js"></script>
 
     <!--jquery-ui library script for calender start-->
-    <script src="../../public/js/lib/jqueryui.js"></script>
+    <script src="http://localhost/StockBAE/public/js/lib/jqueryui.js"></script>
     <!--jquery-ui library script for calender end-->
 
     <!--easing Library Script Start -->
-    <script src="../../public/js/lib/jquery.easing.js"></script>
+    <script src="http://localhost/StockBAE/public/js/lib/jquery.easing.js"></script>
     <!--easing Library Script End -->
 
     <!--Nano Scroll Script Start -->
-    <script src="../../public/js/jquery.nanoscroller.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.nanoscroller.min.js"></script>
     <!--Nano Scroll Script End -->
 
     <!--switchery Script Start -->
-    <script src="../../public/js/switchery.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/switchery.min.js"></script>
     <!--switchery Script End -->
 
     <!--bootstrap switch Button Script Start-->
-    <script src="../../public/js/bootstrap-switch.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootstrap-switch.js"></script>
     <!--bootstrap switch Button Script End-->
 
     <!--easypie Library Script Start -->
-    <script src="../../public/js/jquery.easypiechart.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.easypiechart.min.js"></script>
     <!--easypie Library Script Start -->
 
     <!--bootstrap-progressbar Library script Start-->
-    <script src="../../public/js/bootstrap-progressbar.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootstrap-progressbar.min.js"></script>
     <!--bootstrap-progressbar Library script End-->
 
-    <script type="text/javascript" src="../../public/js/pages/layout.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/layout.js"></script>
     <!--Layout Script End -->
 
-    <script src="../../public/js/lib/modernizr.js"></script>
+    <script src="http://localhost/StockBAE/public/js/lib/modernizr.js"></script>
 
 
     <!--BootBox script for calender start-->
-    <script src="../../public/js/bootbox.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootbox.min.js"></script>
     <!--BootBox script for calender End-->
 
     <!--full calender library script start-->
-    <script src="../../public/js/fullcalendar.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/fullcalendar.min.js"></script>
     <!--full calender library script start-->
 
     <!--calendario library script start-->
-    <script src="../../public/js/jquery.calendario.js"></script>
-    <script src="../../public/js/data.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.calendario.js"></script>
+    <script src="http://localhost/StockBAE/public/js/data.js"></script>
     <!--calendario library script end-->
 
-    <script src="../../public/js/pages/calender.js"></script>
+    <script src="http://localhost/StockBAE/public/js/pages/calender.js"></script>
 </body>
 
 </html>
