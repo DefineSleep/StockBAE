@@ -58,10 +58,7 @@ class FaController extends Controller {
 	 */
 	public function delete($id)
 	{
-        $fas = Fa::all()->first()
-
-            //->where('users.name', '=', 'abc')
-            ->get();
+        $fas = Fa::all()->first()->get();
         $fa = Fa::where('fa_id',$id);
         $fa->delete();
         return \View::make('falst')->with('fas',$fas);

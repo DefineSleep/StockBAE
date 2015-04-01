@@ -24,7 +24,7 @@ class Client extends \Eloquent{
      *
      * @var array
      */
-    protected $fillable = ['c_id','password', 'name', 'email', 'address', 'dob', 'account_no','ni_no','', 'contact_no' ,'net_worth'];
+    protected $fillable = ['c_id','password', 'name', 'email', 'address', 'dob', 'account_no','ni_no', 'contact_no' ,'net_worth'];
 
     /**
      * The attributes excluded from the model's JSON form.

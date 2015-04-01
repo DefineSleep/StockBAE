@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Client_list extends Model {
+class Client_list extends \Eloquent {
 
     /**
      * The database table used by the model.

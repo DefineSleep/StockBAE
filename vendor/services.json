@@ -25,6 +25,7 @@
         "Way\\Generators\\GeneratorsServiceProvider",
         "Xethron\\MigrationsGenerator\\MigrationsGeneratorServiceProvider",
         "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
+        "Illuminate\\Html\\HtmlServiceProvider",
         "App\\Providers\\AppServiceProvider",
         "App\\Providers\\BusServiceProvider",
         "App\\Providers\\ConfigServiceProvider",
@@ -129,7 +130,9 @@
         "translator": "Illuminate\\Translation\\TranslationServiceProvider",
         "translation.loader": "Illuminate\\Translation\\TranslationServiceProvider",
         "command.ide-helper.generate": "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
-        "command.ide-helper.models": "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider"
+        "command.ide-helper.models": "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
+        "html": "Illuminate\\Html\\HtmlServiceProvider",
+        "form": "Illuminate\\Html\\HtmlServiceProvider"
     },
     "when": {
         "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [],
@@ -143,6 +146,7 @@
         "Illuminate\\Redis\\RedisServiceProvider": [],
         "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider": [],
         "Illuminate\\Translation\\TranslationServiceProvider": [],
-        "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider": []
+        "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider": [],
+        "Illuminate\\Html\\HtmlServiceProvider": []
     }
 }

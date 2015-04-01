@@ -21,7 +21,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBae - Table</title>
+    <title>StockBae - FA Manager</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
@@ -403,7 +403,8 @@
                                                     <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
                                                     <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
                                                     {!! Form::open(['method' => 'POST', 'route' => ['fa/delete',$fas[$i]->fa_id ]]) !!}
-                                                    {!! Form::submit('  ', ['class' => 'btn btn-xs btn-danger']) !!}
+                                                    {{--{!! Form::submit('<i class="fa fa-minus"></i>', ['class' => 'btn btn-xs btn-danger']) !!}--}}
+                                                    {!! Form::button('<i class="fa fa-minus"></i> DELETE', array('type' => 'submit','alt' => 'Delete', 'class' => 'btn btn-xs btn-danger'))!!}
                                                     {!! Form::close() !!}
                                                     {{--<button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>--}}
                                                 </td>

@@ -138,6 +138,7 @@ return [
         'Way\Generators\GeneratorsServiceProvider',
         'Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Illuminate\Html\HtmlServiceProvider',
 
 		/*
 		 * Application Service Providers...

@@ -23,12 +23,14 @@ Route::get('calendar/delete', 'MeetingController@delete');
 Route::get('client', 'ClientController@index');
 Route::get('client/add', 'ClientController@add');
 Route::get('client/edit', 'ClientController@edit');
-Route::get('client/delete', 'ClientController@delete');
+Route::post('client/delete/{id}', array('as'=>'client/delete', 'uses'=>'ClientController@delete'));
 
 Route::get('fa', 'FaController@index');
 Route::get('fa/add', 'FaController@add');
 Route::get('fa/edit', 'FaController@edit');
-Route::post('fa/delete{id}', 'FaController@delete');
+Route::post('fa/delete/{id}', array('as'=>'fa/delete', 'uses'=>'FaController@delete'));
+
+Route::get('faclient/{id}', array('as'=>'faclient', 'uses'=>'ClientListController@index'));
 
 Route::get('home', 'HomeController@index');
 

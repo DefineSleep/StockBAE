@@ -21,7 +21,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBae - CRM</title>
+    <title>StockBae - FA Clients</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
@@ -374,8 +374,8 @@
                                         <table class="table table-bordered table-striped">
                                             <thead>
                                             <tr>
-                                                <th>FA Name</th>
-                                                <th>Client Name</th>
+                                                <th>CID</th>
+                                                <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Address</th>
                                                 <th>Date Of Birth</th>
@@ -390,8 +390,8 @@
                                             @for($i = 0; $i<count($clients);$i++)
 
                                                 <tr>
-                                                    <td>{{ $clients[$i]->fname}}</td>
-                                                    <td>{{ $clients[$i]->cname}}</td>
+                                                    <td>{{ $clients[$i]->c_id}}</td>
+                                                    <td>{{ $clients[$i]->name}}</td>
                                                     <td>{{ $clients[$i]->email}}</td>
                                                     <td>{{ $clients[$i]->address}}</td>
                                                     <td>{{ $clients[$i]->dob}}</td>
