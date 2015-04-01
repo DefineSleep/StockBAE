@@ -1,3 +1,3 @@
-@for($i = 0; $i<count($fas);$i++)
-    <p>{{ $fas[$i]}}<p>
+@for($i = 0; $i<count($clients);$i++)
+    <p>{{ $clients[$i]}}<p>
 @endfor

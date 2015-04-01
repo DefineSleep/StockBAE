@@ -21,11 +21,11 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBAE - CRM</title>
+    <title>StockBae - Enter Client Details</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
-    <script src="../../public/js/pace.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
@@ -53,7 +53,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="">
     <body class="">
 <!--Navigation Top Bar Start-->
 <nav class="navigation">
@@ -316,7 +315,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="client">
+                    <a href="clientlst.html">
                         <i class="fa fa-dashboard"></i> <span>Clients</span>
                     </a>
                 </li>
@@ -333,91 +332,166 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!--Top header start-->
-                            <h3 class="ls-top-header">Table</h3>
+                            <h3 class="ls-top-header">Enter Client Details</h3>
                             <!--Top header end -->
 
                             <!--Top breadcrumb start -->
                             <ol class="breadcrumb">
                                 <li><a href="#"><i class="fa fa-home"></i></a></li>
-                                <li class="active">Table</li>
+                                <li class="active">Client Form</li>
                             </ol>
                             <!--Top breadcrumb start -->
                         </div>
                     </div>
                     <!-- Main Content Element  Start-->
-
                     <div class="row">
-                        {{--<div class="col-md-12">--}}
+                        <div class="col-md-12">
                             <div class="panel panel-default">
-                                <div class="panel-heading row">
-                                    <div class="col-md-2"><h3 class="panel-title">Client List</h3></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-2">
-                                        <a href="client-form"><i class="glyphicon glyphicon-plus"></i> <span>Add New Client</span></a>
-                                    </div>
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Enter Client Details</h3>
                                 </div>
 
+                                <div class="col-md-12">
+                        <div class="mail-area">
+
+                        <div class="mail-box-navigation">
+                        </div>
+                                <div class="panel-body form_view">
+                                    <form id="formID" class="formular form-horizontal ls_form" method="post" action="#">
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Name:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control validate[required] text-input" id="name"
+                                                           name="name" placeholder="Your name">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Email:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input placeholder="someone@nowhere.com" value=""
+                                                           class="validate[required,custom[email]] form-control" type="text" name="email"
+                                                           id="email"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Address:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input placeholder="Enter Your Home Address" value=""
+                                                           class="validate[required,custom[address]] form-control" type="text" name="address"
+                                                           id="address"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">DOB:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input placeholder="1985/08/31" value=""
+                                                           class="form-control validate[custom[date]] text-input" type="text" name="bDate"
+                                                           id="bDate"/>
+                                                    <span class="help_text">YYYY/MM/DD</span>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-                                    {{--<h3 class="panel-title">Client List</h3>--}}
-                                </div>
-                                <div class="panel-body">
-                                    <!--Table Wrapper Start-->
-                                    <div class="table-responsive ls-table">
-                                        <table class="table table-bordered table-striped">
-                                            <thead>
-                                            <tr>
-                                                <th>FA Name</th>
-                                                <th>Client Name</th>
-                                                <th>Email</th>
-                                                <th>Address</th>
-                                                <th>Date Of Birth</th>
-                                                <th>Account No.</th>
-                                                <th>National Insurance No.</th>
-                                                <th>Contact No.</th>
-                                                <th>Networth</th>
-                                                <th class="text-center">Action</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            @for($i = 0; $i<count($clients);$i++)
 
-                                                <tr>
-                                                    <td>{{ $clients[$i]->fname}}</td>
-                                                    <td>{{ $clients[$i]->cname}}</td>
-                                                    <td>{{ $clients[$i]->email}}</td>
-                                                    <td>{{ $clients[$i]->address}}</td>
-                                                    <td>{{ $clients[$i]->dob}}</td>
-                                                    <td>{{ $clients[$i]->account_no}}</td>
-                                                    <td>{{ $clients[$i]->ni_no}}</td>
-                                                    <td>{{ $clients[$i]->contact_no}}</td>
-                                                    <td>{{ $clients[$i]->networth}}</td>
-                                                    <td>
-                                                        <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                        <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                        {!! Form::open(['method' => 'POST', 'route' => ['client/delete',$clients[$i]->c_id ]]) !!}
-                                                        {!! Form::button('<i class="fa fa-minus"></i> DELETE', array('type' => 'submit','alt' => 'Delete', 'class' => 'btn btn-xs btn-danger'))!!}
-                                                        {!! Form::close() !!}
-                                                        {{--<button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>--}}
-                                                    </td>
+<div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Account#:* </label>
 
-                                                </tr>
-                                            @endfor
-                                            </tbody>
-                                        </table>
+                                                <div class="col-md-10">
+                                                    <input placeholder="123J2322S" value=""
+                                                           class="validate[required,custom[account_no]] form-control" type="text" name="accountNo"
+                                                           id="accountNo"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                       
+                                        
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">National Insurance#:* </label>
 
-                                    </div>
-                                    <!--Table Wrapper Finish-->
+                                                <div class="col-md-10">
+                                                    <input placeholder="1212893884798743" value=""
+                                                           class="validate[required,custom[ni_no]] form-control" type="text" name="ni_no"
+                                                           id="ni_no"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                         <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Phone:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input placeholder="056832634" value=""
+                                                           class="validate[required,custom[contact_no]] form-control" type="text" name="contact_no"
+                                                           id="contact_no"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Net Worth:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input placeholder="123000" value=""
+                                                           class="validate[required,custom[networth]] form-control" type="text" name="networth"
+                                                           id="networth"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+
+                                        <div class="row ls_divider last">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label"></label>
+
+                                                <div class="col-sm-10">
+                                                    <button class="submit btn-primary btn" type="submit" name="submit">Submit</button>
+                                                    <button class="reset btn-primary btn" type="reset" name="reset">Reset</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </form>
+
                                 </div>
                             </div>
-                        {{--</div>--}}
+                        </div>
+                    </div>
+                    <!-- Main Content Element  End-->
+
+                </div>
+            </div>
+          
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Main Content Element  End-->
@@ -623,62 +697,62 @@
     </section>
 
     <!--Layout Script start -->
-    <script type="text/javascript" src="../../public/js/color.js"></script>
-    <script type="text/javascript" src="../../public/js/lib/jquery-1.11.min.js"></script>
-    <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../public/js/multipleAccordion.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/color.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/multipleAccordion.js"></script>
     <!--jqueryui for table start-->
     <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <!--jqueryui for table end-->
 
 
     <!--easing Library Script Start -->
-    <script src="../../public/js/lib/jquery.easing.js"></script>
+    <script src="http://localhost/StockBAE/public/js/lib/jquery.easing.js"></script>
     <!--easing Library Script End -->
 
     <!--Nano Scroll Script Start -->
-    <script src="../../public/js/jquery.nanoscroller.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.nanoscroller.min.js"></script>
     <!--Nano Scroll Script End -->
 
     <!--switchery Script Start -->
-    <script src="../../public/js/switchery.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/switchery.min.js"></script>
     <!--switchery Script End -->
 
     <!--bootstrap switch Button Script Start-->
-    <script src="../../public/js/bootstrap-switch.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootstrap-switch.js"></script>
     <!--bootstrap switch Button Script End-->
 
     <!--easypie Library Script Start -->
-    <script src="../../public/js/jquery.easypiechart.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.easypiechart.min.js"></script>
     <!--easypie Library Script Start -->
 
     <!--bootstrap-progressbar Library script Start-->
-    <script src="../../public/js/bootstrap-progressbar.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootstrap-progressbar.min.js"></script>
     <!--bootstrap-progressbar Library script End-->
 
-    <script type="text/javascript" src="../../public/js/pages/layout.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/layout.js"></script>
     <!--Layout Script End -->
 
 
 
     <!--Drag & Drop & Sort  table start-->
-    <script src="../../public/js/tsort.js"></script>
-    <script src="../../public/js/jquery.tablednd.js"></script>
-    <script src="../../public/js/jquery.dragtable.js"></script>
+    <script src="http://localhost/StockBAE/public/js/tsort.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.tablednd.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.dragtable.js"></script>
     <!--Drag & Drop & Sort table end-->
 
     <!--Editable-table Start-->
-    <script src="../../public/js/editable-table/jquery.dataTables.js"></script>
-    <script src="../../public/js/editable-table/jquery.validate.js"></script>
-    <script src="../../public/js/editable-table/jquery.jeditable.js"></script>
-    <script src="../../public/js/editable-table/jquery.dataTables.editable.js"></script>
+    <script src="http://localhost/StockBAE/public/js/editable-table/jquery.dataTables.js"></script>
+    <script src="http://localhost/StockBAE/public/js/editable-table/jquery.validate.js"></script>
+    <script src="http://localhost/StockBAE/public/js/editable-table/jquery.jeditable.js"></script>
+    <script src="http://localhost/StockBAE/public/js/editable-table/jquery.dataTables.editable.js"></script>
     <!--Editable-table Finish -->
 
-    <script src="../../public/js/bootstrap-progressbar.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootstrap-progressbar.min.js"></script>
 
     <!--Demo table script start-->
-    <script src="../../public/js/pages/table.js"></script>
+    <script src="http://localhost/StockBAE/public/js/pages/table.js"></script>
     <!--Demo table script end-->
 </body>
-</body>
+
 </html>

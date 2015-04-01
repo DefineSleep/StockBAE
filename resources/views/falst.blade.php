@@ -359,7 +359,7 @@
                                 <div class="col-md-1"></div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-1"></div>
-                                <div class="col-md-2"> <a href="compose-mail.html"><i class="glyphicon glyphicon-plus"></i> <span>Add New Financial Advisor</span></a></div></div>
+                                <div class="col-md-2"> <a href="fa-form"><i class="glyphicon glyphicon-plus"></i> <span>Add New Financial Advisor</span></a></div></div>
                                 <div class="panel-body">
                                     <!--Table Wrapper Start-->
                                     <div class="table-responsive ls-table">
@@ -381,14 +381,6 @@
                                             </thead>
                                             <tbody>
                                             @for($i = 0; $i<count($fas);$i++)
-
-                                                {{--            <p>{{ $fas[$i]->fa_id}}
-                                                              {{ $fas [$i]->name}}
-                                                              {{ $fas[$i]->email}}
-                                                              {{ $fas[$i]->address}}</p>
-
-
-                                               --}}
                                             <tr>
                                                 <td>{{ $fas[$i]->fa_id}}</td>
                                                 <td>{{ $fas[$i]->name}}</td>
@@ -404,7 +396,7 @@
                                                     <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
                                                     {!! Form::open(['method' => 'POST', 'route' => ['fa/delete',$fas[$i]->fa_id ]]) !!}
                                                     {{--{!! Form::submit('<i class="fa fa-minus"></i>', ['class' => 'btn btn-xs btn-danger']) !!}--}}
-                                                    {!! Form::button('<i class="fa fa-minus"></i> DELETE', array('type' => 'submit','alt' => 'Delete', 'class' => 'btn btn-xs btn-danger'))!!}
+                                                    {!! Form::button('<i class="fa fa-minus"></i>', array('type' => 'submit','alt' => 'Delete', 'class' => 'btn btn-xs btn-danger'))!!}
                                                     {!! Form::close() !!}
                                                     {{--<button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>--}}
                                                 </td>

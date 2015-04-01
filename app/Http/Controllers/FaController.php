@@ -10,11 +10,12 @@ use Illuminate\Http\Request;
 
 class FaController extends Controller {
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
+
+    public function form()
+    {
+        return view('fa-form');
+    }
+
 	public function index()
 	{
 
@@ -22,11 +23,6 @@ class FaController extends Controller {
         return \View::make('falst')->with('fas',$fas);
 	}
 
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
 	public function add()
 	{
         $fas = Fa::all()->first()
@@ -37,11 +33,6 @@ class FaController extends Controller {
         return \View::make('falst')->with('fas',$fas);
     }
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
 	public function edit()
 	{
         $fas = Fa::all();
@@ -50,47 +41,12 @@ class FaController extends Controller {
         return \View::make('falst')->with('fas',$fas);
 	}
 
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
 	public function delete($id)
 	{
         $fas = Fa::all()->first()->get();
         $fa = Fa::where('fa_id',$id);
         $fa->delete();
         return \View::make('falst')->with('fas',$fas);
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
 	}
 
 }

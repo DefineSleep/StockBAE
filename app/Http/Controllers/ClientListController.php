@@ -17,8 +17,9 @@ class ClientListController extends Controller {
 	public function index($fid)
 	{
         $clients =  Client_list::all()->first()
-            ->select('fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
-            ->join('client', 'client_list.c_id', '=', 'client.c_id')->where('fa_id',$fid);
+            ->select('c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
+            ->join('client', 'client_list.c_id', '=', 'client.c_id')
+            ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->where('fa.fa_id',$fid)->get();
         return \View::make('faclientlst')->with('clients',$clients);
 	}
 
