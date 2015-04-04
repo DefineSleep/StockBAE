@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use App\Meeting;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+
 
 class MeetingController extends Controller {
 

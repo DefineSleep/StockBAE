@@ -6,9 +6,12 @@ use App\Client;
 use App\Client_list;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
+
 
 use App\User;
 use Illuminate\Http\FormC;
+
 
 class ClientController extends Controller {
 
@@ -42,7 +45,7 @@ class ClientController extends Controller {
             ->select('client.c_id as c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
             ->join('client', 'client_list.c_id', '=', 'client.c_id')
             ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->get();
-        $client1 = Client::updateOrCreate(['c_id' => 'c24','password' => 'letitbe','name' => 'James Holt','email' => 'diehoping@gmail.com','address' => '675R Sheikh Zayed Road ','dob' => '1967-11-04','account_no' => '11122332','account_no' => '999999999','contact_no' => '0563439683','ni_no' => '012345678','networth' => '10000000']);
+        $client1 = Client::updateOrCreate(['c_id' => 'c24','password' => \Hash::make('letitbe'),'name' => 'James Holt','email' => 'diehoping@gmail.com','address' => '675R Sheikh Zayed Road ','dob' => '1967-11-04','account_no' => '999999999','contact_no' => '0563439683','ni_no' => '012345678','networth' => '10000000']);
         $client2 = Client_list::updateOrCreate(['fa_id' => 'qw1', 'c_id' => 'c24']);
         return \View::make('clientlst')->with('clients',$clients);
     }

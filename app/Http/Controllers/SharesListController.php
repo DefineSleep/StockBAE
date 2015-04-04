@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use App\Shares_list;
 use App\Stocks;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+
 
 class SharesListController extends Controller {
 

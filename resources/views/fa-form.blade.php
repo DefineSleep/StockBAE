@@ -367,8 +367,9 @@
 
                                     </div>
                                     <div class="panel-body form_view">
+
                                         <form id="formID" class="formular form-horizontal ls_form" method="post"
-                                              action="#">
+                                              action="fa/add">
 
                                             <div class="row ls_divider">
                                                 <div class="form-group">
@@ -397,7 +398,7 @@
 
                                                     <div class="col-md-10">
                                                         <input type="text"
-                                                               class="form-control validate[required] text-input"
+                                                               class="form-control text-input"
                                                                id="fa_id"
                                                                name="fa_id" placeholder="ab123">
                                                     </div>
@@ -410,9 +411,9 @@
 
                                                     <div class="col-md-10">
                                                         <input type="password"
-                                                               class="form-control validate[required] text-input"
-                                                               id="name"
-                                                               name="name" placeholder="xxxxxxxx">
+                                                               class="form-control text-input"
+                                                               id="password"
+                                                               name="password" placeholder="xxxxxxxx">
                                                     </div>
                                                 </div>
 
@@ -421,9 +422,9 @@
 
                                                     <div class="col-md-10">
                                                         <input type="password"
-                                                               class="form-control validate[required] text-input"
-                                                               id="name"
-                                                               name="name" placeholder="xxxxxxxx">
+                                                               class="form-control text-input"
+                                                               id="password"
+                                                               name="password" placeholder="xxxxxxxx">
                                                     </div>
                                                 </div>
                                             </div>
@@ -434,7 +435,7 @@
 
                                                     <div class="col-md-10">
                                                         <input type="text"
-                                                               class="form-control validate[required] text-input"
+                                                               class="form-control text-input"
                                                                id="name"
                                                                name="name" placeholder="Your Name">
                                                     </div>
@@ -447,8 +448,8 @@
 
                                                     <div class="col-md-10">
                                                         <input placeholder="someone@nowhere.com" value=""
-                                                               class="validate[required,custom[email]] form-control"
-                                                               type="text" name="email"
+                                                               class="form-control"
+                                                               type="email" name="email"
                                                                id="email"/>
                                                     </div>
                                                 </div>
@@ -459,10 +460,9 @@
                                                     <label class="col-md-2 control-label">Address:* </label>
 
                                                     <div class="col-md-10">
-                                                        <input placeholder="Enter Your Home Address" value=""
-                                                               class="validate[required,custom[address]] form-control"
-                                                               type="text" name="address"
-                                                               id="address"/>
+                                                        <textarea placeholder="Enter Your Home Address"
+                                                               class="form-control" name="address"
+                                                               id="address"> </textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -474,9 +474,9 @@
 
                                                     <div class="col-md-10">
                                                         <input placeholder="1985/08/31" value=""
-                                                               class="form-control validate[custom[date]] text-input"
-                                                               type="text" name="bDate"
-                                                               id="bDate"/>
+                                                               class="form-control text-input"
+                                                               type="date" name="dob"
+                                                               id="dob"/>
                                                         <span class="help_text">YYYY/MM/DD</span>
                                                     </div>
                                                 </div>
@@ -488,7 +488,7 @@
 
                                                     <div class="col-md-10">
                                                         <input placeholder="056832634" value=""
-                                                               class="validate[required,custom[contact_no]] form-control"
+                                                               class="form-control"
                                                                type="text" name="contact_no"
                                                                id="contact_no"/>
                                                     </div>
@@ -502,7 +502,7 @@
 
                                                     <div class="col-md-10">
                                                         <input placeholder="1985/08/31" value=""
-                                                               class="form-control validate[custom[start_date]] text-input"
+                                                               class="form-control text-input"
                                                                type="text" name="sDate"
                                                                id="sDate"/>
                                                         <span class="help_text">DD/MM/YYYY</span>
@@ -517,7 +517,7 @@
 
                                                     <div class="col-md-10">
                                                         <input placeholder="300" value=""
-                                                               class="validate[required,custom[salary/hr]] form-control"
+                                                               class="form-control"
                                                                type="text" name="salary/hr"
                                                                id="salary/hr"/>
                                                     </div>
@@ -530,7 +530,7 @@
 
                                                     <div class="col-md-10">
                                                         <input placeholder="123456789" value=""
-                                                               class="validate[required,custom[ni_no]] form-control"
+                                                               class="form-control"
                                                                type="text" name="ni_no"
                                                                id="ni_no"/>
                                                     </div>

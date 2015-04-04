@@ -476,6 +476,20 @@
                                         </div>
 
                                     </form>
+                                    {!! Form::open(array('route' => 'client/add')) !!}
+                                    <div class="row ls_divider">
+                                        <div class="form-group">
+
+                                            {!! Form::label('admin', 'Admin:*') !!}
+                                            {!! Form::select('admin',array('bb35'=>'Bethany Banks','ld21'=>'Laurie L. Deckard','sp85'=>'Scott Pearson','tb77'=>'Tom Baxter'),'tb77') !!}
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        {!! Form::submit('hola', ['class'=>'btn primary']) !!}
+                                    </div>
+                                    {!! Form::close() !!}
 
                                 </div>
                             </div>

@@ -4,6 +4,8 @@ use App\Client;
 use App\Client_list;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
+
 
 use Illuminate\Http\Request;
 

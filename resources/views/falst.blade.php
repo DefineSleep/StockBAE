@@ -21,7 +21,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBae - FA Manager</title>
+    <title>StockBAE - FA Manager</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
@@ -61,7 +61,7 @@
             <!--Logo text start-->
             <div class="header-logo">
                 <a href="index.html" title="">
-                    <h1>StockBae</h1>
+                    <h1>StockBAE</h1>
                 </a>
             </div>
             <!--Logo text End-->
@@ -333,13 +333,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!--Top header start-->
-                            <h3 class="ls-top-header">Table</h3>
+                            <h3 class="ls-top-header">Financial Adviser Manager</h3>
                             <!--Top header end -->
 
                             <!--Top breadcrumb start -->
                             <ol class="breadcrumb">
                                 <li><a href="#"><i class="fa fa-home"></i></a></li>
-                                <li class="active">Table</li>
+                                <li class="active">Financial Adviser Manager</li>
                             </ol>
                             <!--Top breadcrumb start -->
                         </div>
@@ -350,7 +350,7 @@
                         {{--<div class="col-md-12">--}}
                         <div class="panel panel-default">
                             <div class="panel-heading row">
-                                <div class="col-md-2"><h3 class="panel-title">Financial Advisors List</h3></div>
+                                <div class="col-md-2"><h3 class="panel-title">Financial Advisers List</h3></div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-1"></div>
