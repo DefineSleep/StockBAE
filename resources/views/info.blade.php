@@ -232,33 +232,66 @@
 
                             </div>
                             <br><br>
-                            <br><br>
-
-                            <div class="ls-user-text2">
-                                <h4>Big Word</h4>
-                                <br><br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                mollit anim id est laborum.
-                            </div>
                         </div>
 
                         <!--User Info Finish-->
                         <!--User Details Finish-->
+                        <div class="row">
+                        <div class="col-md-6">
+                            <h5>
+                                Our Team
+                            </h5>
+                        </div>
+                        </div>
+                        <br>
 
                     </div>
+                    <div class="row">
 
+                        {{--<img src="http://placekitten.com/g/400/200" class="img-rounded" />--}}
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="circle-image"></div>
+                            <h5 style="text-align: center;" >Naiyarah Hussain</h5> <p class="text-center">Project Manager </p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="circle-image-2"></div>
+                            <h5 style="text-align: center;" >Asmaa Azeem</h5> <p class="text-center">Frontend Designer</p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="circle-image-3"></div>
+                            <h5 style="text-align: center;" >Kasra Ahangaran</h5> <p class="text-center">UI/UX Expert</p>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+                        {{--<img src="http://placekitten.com/g/400/200" class="img-rounded" />--}}
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="circle-image-4"></div>
+                            <h5 style="text-align: center;" >Nigel Marshal</h5> <p class="text-center">Technical Writer</p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="circle-image-5"></div>
+                            <h5 style="text-align: center;" >Shoaib Mawani</h5> <p class="text-center">Database Manager</p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="circle-image-6"></div>
+                            <h5 style="text-align: center;" >Mohammad Samie </h5> <p class="text-center">Usability Expert</p>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
 
                 </div>
                 <!--User Details Finish-->
 
             </div>
-
-            {{--<img src="http://placekitten.com/g/400/200" class="img-rounded" />--}}
-            <div class="circle-image"></div>
         </div>
 
         <!-- Main Content Element  End-->
@@ -301,8 +334,10 @@
 
     <!--FLoat library Script Start -->
     <script type="text/javascript" src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.pie.js"></script>
-    <script type="text/javascript" src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.resize.js"></script>
+    <script type="text/javascript"
+            src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.pie.js"></script>
+    <script type="text/javascript"
+            src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.resize.js"></script>
     <!--FLoat library Script End -->
 
     <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/layout.js"></script>
@@ -324,7 +359,7 @@
     <script src="http://localhost/StockBAE/public/js/jquery.amaran.js"></script>
     <!--AmaranJS library script End   -->
     <script src="http://localhost/StockBAE/public/js/pages/dashboard.js"></script>
-    </section>
+</section>
 </body>
 
 </html>
