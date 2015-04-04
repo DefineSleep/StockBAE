@@ -369,6 +369,65 @@
                                     <div class="panel-body form_view">
                                         <form id="formID" class="formular form-horizontal ls_form" method="post"
                                               action="#">
+
+                                            <div class="row ls_divider">
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Admin:* </label>
+
+                                                    <div class="col-md-10">
+                                                        {{--<input placeholder="1212893884798743" value=""
+                                                               class="validate[required,custom[admin_id]] form-control"
+                                                               type="text" name="admin_id"
+                                                               id="admin_id"/>--}}
+                                                        <select class="validate[required,custom[admin_id]] form-control" name="admin_id"
+                                                                id="admin_id">
+                                                            <option value="bb35">Bethany Banks</option>
+                                                            <option value="ld21">Laurie L. Deckard</option>
+                                                            <option value="sp85">Scott Pearson</option>
+                                                            <option selected value="tb77">Tom Baxter</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row ls_divider">
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">User ID:* </label>
+
+                                                    <div class="col-md-10">
+                                                        <input type="text"
+                                                               class="form-control validate[required] text-input"
+                                                               id="fa_id"
+                                                               name="fa_id" placeholder="ab123">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row ls_divider">
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Password:* </label>
+
+                                                    <div class="col-md-10">
+                                                        <input type="password"
+                                                               class="form-control validate[required] text-input"
+                                                               id="name"
+                                                               name="name" placeholder="xxxxxxxx">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Confirm Password:* </label>
+
+                                                    <div class="col-md-10">
+                                                        <input type="password"
+                                                               class="form-control validate[required] text-input"
+                                                               id="name"
+                                                               name="name" placeholder="xxxxxxxx">
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="row ls_divider">
                                                 <div class="form-group">
                                                     <label class="col-md-2 control-label">Name:* </label>
@@ -377,7 +436,7 @@
                                                         <input type="text"
                                                                class="form-control validate[required] text-input"
                                                                id="name"
-                                                               name="name" placeholder="Your name">
+                                                               name="name" placeholder="Your Name">
                                                     </div>
                                                 </div>
                                             </div>
@@ -470,7 +529,7 @@
                                                     <label class="col-md-2 control-label">National Insurance#:* </label>
 
                                                     <div class="col-md-10">
-                                                        <input placeholder="1212893884798743" value=""
+                                                        <input placeholder="123456789" value=""
                                                                class="validate[required,custom[ni_no]] form-control"
                                                                type="text" name="ni_no"
                                                                id="ni_no"/>
@@ -478,19 +537,6 @@
                                                 </div>
                                             </div>
 
-
-                                            <div class="row ls_divider">
-                                                <div class="form-group">
-                                                    <label class="col-md-2 control-label">Admin ID:* </label>
-
-                                                    <div class="col-md-10">
-                                                        <input placeholder="1212893884798743" value=""
-                                                               class="validate[required,custom[admin_id]] form-control"
-                                                               type="text" name="admin_id"
-                                                               id="admin_id"/>
-                                                    </div>
-                                                </div>
-                                            </div>
 
 
                                             <div class="row ls_divider last">
