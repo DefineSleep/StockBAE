@@ -357,14 +357,79 @@
                         <div class="mail-box-navigation">
                         </div>
                                 <div class="panel-body form_view">
-                                    <form id="formID" class="formular form-horizontal ls_form" method="post" action="#">
+
+                                    <form id="formID" class="formular form-horizontal ls_form" method="post"
+                                          action="client/add">
+
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Financial Adviser:* </label>
+
+                                                <div class="col-md-10">
+                                                    <select class="form-control" name="fa_id"
+                                                            id="fa_id">
+                                                        <option value="bb8">Bobby Khoury</option>
+                                                        <option value="cv8">Castiel Collins</option>
+                                                        <option value="dd8">Dalia Hassen</option>
+                                                        <option value="gh8">Gabriel Hamilton</option>
+                                                        <option value="kj8">Karim Abubakar</option>
+                                                        <option value="mn9">Maliha Nisar</option>
+                                                        <option value="pp9">Pippa Parkinson</option>
+                                                        <option value="qw1">Quinn Elizabeth</option>
+                                                        <option value="vv8">Vanessa Hudson</option>
+                                                        <option selected value="zx5">Zain Ali</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">User ID:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input type="text"
+                                                           class="form-control text-input"
+                                                           id="c_id"
+                                                           name="c_id" placeholder="ab123">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Password:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input type="password"
+                                                           class="form-control text-input"
+                                                           id="password"
+                                                           name="password" placeholder="xxxxxxxx">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Confirm Password:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input type="password"
+                                                           class="form-control text-input"
+                                                           id="password"
+                                                           name="password" placeholder="xxxxxxxx">
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="row ls_divider">
                                             <div class="form-group">
                                                 <label class="col-md-2 control-label">Name:* </label>
 
                                                 <div class="col-md-10">
-                                                    <input type="text" class="form-control validate[required] text-input" id="name"
-                                                           name="name" placeholder="Your name">
+                                                    <input type="text"
+                                                           class="form-control text-input"
+                                                           id="name"
+                                                           name="name" placeholder="Your Name">
                                                 </div>
                                             </div>
                                         </div>
@@ -375,7 +440,8 @@
 
                                                 <div class="col-md-10">
                                                     <input placeholder="someone@nowhere.com" value=""
-                                                           class="validate[required,custom[email]] form-control" type="text" name="email"
+                                                           class="form-control"
+                                                           type="email" name="email"
                                                            id="email"/>
                                                 </div>
                                             </div>
@@ -386,81 +452,68 @@
                                                 <label class="col-md-2 control-label">Address:* </label>
 
                                                 <div class="col-md-10">
-                                                    <input placeholder="Enter Your Home Address" value=""
-                                                           class="validate[required,custom[address]] form-control" type="text" name="address"
-                                                           id="address"/>
+                                                        <textarea placeholder="Enter Your Home Address"
+                                                                  class="form-control" name="address"
+                                                                  id="address"> </textarea>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        
+
                                         <div class="row ls_divider">
                                             <div class="form-group">
                                                 <label class="col-md-2 control-label">DOB:* </label>
 
                                                 <div class="col-md-10">
                                                     <input placeholder="1985/08/31" value=""
-                                                           class="form-control validate[custom[date]] text-input" type="text" name="bDate"
-                                                           id="bDate"/>
+                                                           class="form-control text-input"
+                                                           type="date" name="dob"
+                                                           id="dob"/>
                                                     <span class="help_text">YYYY/MM/DD</span>
                                                 </div>
                                             </div>
                                         </div>
 
-
-
-<div class="row ls_divider">
-                                            <div class="form-group">
-                                                <label class="col-md-2 control-label">Account#:* </label>
-
-                                                <div class="col-md-10">
-                                                    <input placeholder="123J2322S" value=""
-                                                           class="validate[required,custom[account_no]] form-control" type="text" name="accountNo"
-                                                           id="accountNo"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                       
-                                        
                                         <div class="row ls_divider">
-                                            <div class="form-group">
-                                                <label class="col-md-2 control-label">National Insurance#:* </label>
-
-                                                <div class="col-md-10">
-                                                    <input placeholder="1212893884798743" value=""
-                                                           class="validate[required,custom[ni_no]] form-control" type="text" name="ni_no"
-                                                           id="ni_no"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                         <div class="row ls_divider">
                                             <div class="form-group">
                                                 <label class="col-md-2 control-label">Phone:* </label>
 
                                                 <div class="col-md-10">
                                                     <input placeholder="056832634" value=""
-                                                           class="validate[required,custom[contact_no]] form-control" type="text" name="contact_no"
+                                                           class="form-control"
+                                                           type="text" name="contact_no"
                                                            id="contact_no"/>
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                         <div class="row ls_divider">
+
+                                        <div class="row ls_divider">
+
                                             <div class="form-group">
-                                                <label class="col-md-2 control-label">Net Worth:* </label>
+                                                <label class="col-md-2 control-label"> Account#:*</label>
 
                                                 <div class="col-md-10">
-                                                    <input placeholder="123000" value=""
-                                                           class="validate[required,custom[networth]] form-control" type="text" name="networth"
-                                                           id="networth"/>
+                                                    <input placeholder="123456789" value=""
+                                                           class="form-control"
+                                                           type="text" name="account_no"
+                                                           id="account_no"/>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
+                                        <div class="row ls_divider">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">National Insurance#:* </label>
+
+                                                <div class="col-md-10">
+                                                    <input placeholder="123456789" value=""
+                                                           class="form-control"
+                                                           type="text" name="ni_no"
+                                                           id="ni_no"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
 
 
                                         <div class="row ls_divider last">
@@ -468,28 +521,15 @@
                                                 <label class="col-md-2 control-label"></label>
 
                                                 <div class="col-sm-10">
-                                                    <button class="submit btn-primary btn" type="submit" name="submit">Submit</button>
-                                                    <button class="reset btn-primary btn" type="reset" name="reset">Reset</button>
+                                                    <button class="submit btn-primary btn" type="submit"
+                                                            name="submit">Submit
+                                                    </button>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
 
                                     </form>
-                                    {!! Form::open(array('route' => 'client/add')) !!}
-                                    <div class="row ls_divider">
-                                        <div class="form-group">
-
-                                            {!! Form::label('admin', 'Admin:*') !!}
-                                            {!! Form::select('admin',array('bb35'=>'Bethany Banks','ld21'=>'Laurie L. Deckard','sp85'=>'Scott Pearson','tb77'=>'Tom Baxter'),'tb77') !!}
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        {!! Form::submit('hola', ['class'=>'btn primary']) !!}
-                                    </div>
-                                    {!! Form::close() !!}
 
                                 </div>
                             </div>

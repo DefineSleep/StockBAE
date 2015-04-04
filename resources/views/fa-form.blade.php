@@ -376,11 +376,7 @@
                                                     <label class="col-md-2 control-label">Admin:* </label>
 
                                                     <div class="col-md-10">
-                                                        {{--<input placeholder="1212893884798743" value=""
-                                                               class="validate[required,custom[admin_id]] form-control"
-                                                               type="text" name="admin_id"
-                                                               id="admin_id"/>--}}
-                                                        <select class="validate[required,custom[admin_id]] form-control" name="admin_id"
+                                                        <select class="form-control" name="admin_id"
                                                                 id="admin_id">
                                                             <option value="bb35">Bethany Banks</option>
                                                             <option value="ld21">Laurie L. Deckard</option>
@@ -495,21 +491,6 @@
                                                 </div>
                                             </div>
 
-
-                                            <div class="row ls_divider">
-                                                <div class="form-group">
-                                                    <label class="col-md-2 control-label">Start Date:* </label>
-
-                                                    <div class="col-md-10">
-                                                        <input placeholder="1985/08/31" value=""
-                                                               class="form-control text-input"
-                                                               type="text" name="sDate"
-                                                               id="sDate"/>
-                                                        <span class="help_text">DD/MM/YYYY</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                             <div class="row ls_divider">
 
                                                 <div class="form-group">
@@ -546,9 +527,6 @@
                                                     <div class="col-sm-10">
                                                         <button class="submit btn-primary btn" type="submit"
                                                                 name="submit">Submit
-                                                        </button>
-                                                        <button class="reset btn-primary btn" type="reset" name="reset">
-                                                            Reset
                                                         </button>
                                                     </div>
 
