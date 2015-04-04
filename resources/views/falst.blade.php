@@ -296,27 +296,27 @@
             <!--Left navigation start-->
             <ul class="mainNav">
                 <li>
-                    <a href="index-2.html">
+                    <a href="profile">
                         <i class="fa fa-dashboard"></i> <span>Profile</span>
                     </a>
                 </li>
                 <li>
-                    <a href="index.html">
+                    <a href="portfolio">
                         <i class="fa fa-dashboard"></i> <span>Client Portfolio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="calender.html">
+                    <a href="calendar">
                         <i class="fa fa-dashboard"></i> <span>Calender</span>
                     </a>
                 </li>
                 <li>
-                    <a href="falst.html">
+                    <a href="fa">
                         <i class="fa fa-dashboard"></i> <span>Financial Advisors</span>
                     </a>
                 </li>
                 <li>
-                    <a href="clientlst.html">
+                    <a href="client">
                         <i class="fa fa-dashboard"></i> <span>Clients</span>
                     </a>
                 </li>

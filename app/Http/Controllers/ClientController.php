@@ -50,52 +50,40 @@ class ClientController extends Controller {
         $ni_no = \Request::input('ni_no');
         $fa_id = \Request::input('fa_id');
 
-        $clients =  Client_list::all()->first()
-            ->select('client.c_id as c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
-            ->join('client', 'client_list.c_id', '=', 'client.c_id')
-            ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->get();
-        $client1 = Client::updateOrCreate(['c_id' => $c_id,'password' => \Hash::make($password),'name' => $name,'email' => $email,
+
+        $acc = Account::updateOrCreate(['account_no' => $account_no, 'amount' => '100000']);
+        $client = Client::updateOrCreate(['c_id' => $c_id,'password' => \Hash::make($password),'name' => $name,'email' => $email,
             'address' => $address,'dob' => $dob,'account_no' => $account_no,'contact_no' => $contact_no,'ni_no' => $ni_no,'networth' => '0']);
-        $client2 = Client_list::updateOrCreate(['fa_id' => $fa_id, 'c_id' => $c_id]);
+        $client_list = Client_list::updateOrCreate(['fa_id' => $fa_id, 'c_id' => $c_id]);
+
         return redirect('client');
-        /*return \View::make('clientlst')->with('clients',$clients);*/
     }
 
     public function transfer($id)
     {
-        $clients =  Client_list::all()->first()
-            ->select('client.c_id as c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
-            ->join('client', 'client_list.c_id', '=', 'client.c_id')
-            ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->get();
         $client2 = Client_list::updateOrCreate(['fa_id' => 'qw1', 'c_id' => $id]);
+
         return redirect('client');
-        /*return \View::make('clientlst')->with('clients',$clients);*/
     }
 
     public function edit()
     {
-        $clients =  Client_list::all()->first()
-            ->select('client.c_id as c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
-            ->join('client', 'client_list.c_id', '=', 'client.c_id')
-            ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->get();
         $client1 = Client::where('c_id','sm709')->update(['contact_no'=>'056837294']);
         $client1 = Client::where('c_id','sm709')->update(['account_no'=>'383226677']);
         $client1 = Client::where('c_id','sm709')->update(['email'=>'wth@gmail.com']);
+
         return redirect('client');
-        /*return \View::make('clientlst')->with('clients',$clients);*/
 
     }
 
     public function delete($id)
     {
-        $clients =  Client_list::all()->first()
-            ->select('client.c_id as c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
-            ->join('client', 'client_list.c_id', '=', 'client.c_id')
-            ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->get();
         $client1 = Client_list::where('c_id',$id)->delete();
-        $client2 = Client::where('c_id',$id)->delete();
+        $clientacc = Client::all('account_no')->where('c_id',$id);
+        $client3 = Client::where('c_id',$id)->delete();
+        $acc = Account::where('account_no',$clientacc)->delete();
+
         return redirect('client');
-        /*return \View::make('clientlst')->with('clients',$clients);*/
     }
 
 }

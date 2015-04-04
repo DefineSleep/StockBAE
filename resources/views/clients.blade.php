@@ -21,7 +21,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="../../public/images/ico/fab.ico">
 
-    <title>StockBae - Three Column Gallery</title>
+    <title>StockBAE - CRM</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="assets/css/plugins/pace.css">
@@ -285,7 +285,7 @@
             <!--Phone Navigation Menu icon start-->
             <div class="phone-nav-box visible-xs">
                 <a class="phone-logo" href="profile.html" title="">
-                    <h1>StockBae</h1>
+                    <h1>StockBAE</h1>
                 </a>
                
                 <div class="clearfix"></div>

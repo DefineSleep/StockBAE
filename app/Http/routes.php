@@ -24,7 +24,6 @@ Route::get('calendar/delete', 'MeetingController@delete');
 
 Route::get('client-form', 'ClientController@form');
 Route::get('client', 'ClientController@index');
-/*Route::post('client/add', 'ClientController@add');*/
 Route::post('client/add',array('as'=>'client/add','uses'=>'ClientController@Add'));
 Route::get('client/edit', 'ClientController@edit');
 Route::post('client/delete/{id}', array('as'=>'client/delete', 'uses'=>'ClientController@delete'));

@@ -306,7 +306,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="calender.html">
+                    <a href="calendar">
                         <i class="fa fa-dashboard"></i> <span>Calender</span>
                     </a>
                 </li>
@@ -333,13 +333,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!--Top header start-->
-                            <h3 class="ls-top-header">Table</h3>
+                            <h3 class="ls-top-header">Client Manager</h3>
                             <!--Top header end -->
 
                             <!--Top breadcrumb start -->
                             <ol class="breadcrumb">
                                 <li><a href="#"><i class="fa fa-home"></i></a></li>
-                                <li class="active">Table</li>
+                                <li class="active">Client Manager</li>
                             </ol>
                             <!--Top breadcrumb start -->
                         </div>
