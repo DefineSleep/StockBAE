@@ -19,39 +19,39 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="assets/images/ico/sb-icon-b.png">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
     <title>StockBae - Dashboard</title>
 
     <!--Page loading plugin Start -->
-    <link rel="stylesheet" href="assets/css/plugins/pace.css">
-    <script src="assets/js/pace.min.js"></script>
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
+    <script src="http://localhost/StockBAE/public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap-progressbar-3.1.1.css">
-    <link rel="stylesheet" href="assets/css/plugins/jquery-jvectormap.css">
+    <link href="http://localhost/StockBAE/public/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/bootstrap-progressbar-3.1.1.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/jquery-jvectormap.css">
 
     <!--AmaranJS Css Start-->
-    <link href="assets/css/plugins/amaranjs/jquery.amaran.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/all-themes.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/awesome.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/default.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/blur.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/user.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/rounded.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/readmore.css" rel="stylesheet">
-    <link href="assets/css/plugins/amaranjs/theme/metro.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/jquery.amaran.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/all-themes.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/awesome.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/default.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/blur.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/user.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/rounded.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/readmore.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/amaranjs/theme/metro.css" rel="stylesheet">
     <!--AmaranJS Css End -->
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/style.css" rel="stylesheet">
     <!-- Custom styles Style End-->
 
     <!-- Responsive Style For-->
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/responsive.css" rel="stylesheet">
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
@@ -193,7 +193,7 @@
                         <div class="row">
                             <div class="col-md-12 col-lg-12">
                                 <div class="site-logo">
-                                    <img src="../../public/images/logo.png" alt=""/>
+                                    <img src="http://localhost/StockBAE/public/images/logo.png" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -245,6 +245,7 @@
                                 mollit anim id est laborum.
                             </div>
                         </div>
+
                         <!--User Info Finish-->
                         <!--User Details Finish-->
 
@@ -255,10 +256,12 @@
                 <!--User Details Finish-->
 
             </div>
+
+            {{--<img src="http://placekitten.com/g/400/200" class="img-rounded" />--}}
+            <div class="circle-image"></div>
         </div>
 
         <!-- Main Content Element  End-->
-
 
     </section>
 
@@ -267,60 +270,60 @@
 
 
     <!--Layout Script start -->
-    <script type="text/javascript" src="assets/js/color.js"></script>
-    <script type="text/javascript" src="assets/js/lib/jquery-1.11.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/multipleAccordion.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/color.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/multipleAccordion.js"></script>
 
     <!--easing Library Script Start -->
-    <script src="assets/js/lib/jquery.easing.js"></script>
+    <script src="http://localhost/StockBAE/public/js/lib/jquery.easing.js"></script>
     <!--easing Library Script End -->
 
     <!--Nano Scroll Script Start -->
-    <script src="assets/js/jquery.nanoscroller.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.nanoscroller.min.js"></script>
     <!--Nano Scroll Script End -->
 
     <!--switchery Script Start -->
-    <script src="assets/js/switchery.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/switchery.min.js"></script>
     <!--switchery Script End -->
 
     <!--bootstrap switch Button Script Start-->
-    <script src="assets/js/bootstrap-switch.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootstrap-switch.js"></script>
     <!--bootstrap switch Button Script End-->
 
     <!--easypie Library Script Start -->
-    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.easypiechart.min.js"></script>
     <!--easypie Library Script Start -->
 
     <!--bootstrap-progressbar Library script Start-->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/bootstrap-progressbar.min.js"></script>
     <!--bootstrap-progressbar Library script End-->
 
     <!--FLoat library Script Start -->
-    <script type="text/javascript" src="assets/js/chart/flot/jquery.flot.js"></script>
-    <script type="text/javascript" src="assets/js/chart/flot/jquery.flot.pie.js"></script>
-    <script type="text/javascript" src="assets/js/chart/flot/jquery.flot.resize.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.pie.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/chart/flot/jquery.flot.resize.js"></script>
     <!--FLoat library Script End -->
 
-    <script type="text/javascript" src="assets/js/pages/layout.js"></script>
+    <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/layout.js"></script>
     <!--Layout Script End -->
 
 
-    <script src="assets/js/countUp.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/countUp.min.js"></script>
 
     <!-- skycons script start -->
-    <script src="assets/js/skycons.js"></script>
+    <script src="http://localhost/StockBAE/public/js/skycons.js"></script>
     <!-- skycons script end   -->
 
     <!--Vector map library start-->
-    <script src="assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="assets/js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <!--Vector map library end-->
 
     <!--AmaranJS library script Start -->
-    <script src="assets/js/jquery.amaran.js"></script>
+    <script src="http://localhost/StockBAE/public/js/jquery.amaran.js"></script>
     <!--AmaranJS library script End   -->
-    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="http://localhost/StockBAE/public/js/pages/dashboard.js"></script>
     </section>
 </body>
 
