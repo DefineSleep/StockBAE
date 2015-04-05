@@ -421,6 +421,7 @@
                                                 <td>Last Trade Time</td>
                                                 <td></td>
                                             </tr>
+                                            <tr><td></td></tr>
 
                                         </table>
                                     </div>
@@ -456,6 +457,7 @@
                                                 <td>Stock Exchange</td>
                                                 <td></td>
                                             </tr>
+                                            <tr><td></td></tr>
 
                                         </table>
                                     </div>

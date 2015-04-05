@@ -10,9 +10,9 @@ class Transactions extends Model {
      * @var string
      */
     protected $table = 'transactions';
-    protected $created_at = 'false';
-    protected $updated_at = 'false';
-
+/*    protected $created_at = 'false';
+    protected $updated_at = 'false';*/
+    public $timestamps = 'false';
 
 
 

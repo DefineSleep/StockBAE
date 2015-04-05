@@ -32,7 +32,7 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('info');
+		return view('comp-pro');
 	}
 
 }

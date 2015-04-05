@@ -10,8 +10,9 @@ class Client_list extends \Eloquent {
      * @var string
      */
     protected $table = 'client_list';
-    protected $created_at = 'false';
-    protected $updated_at = 'false';
+/*    protected $created_at = 'false';
+    protected $updated_at = 'false';*/
+    public $timestamps = 'false';
 
     /**
      * The attributes that are mass assignable.

@@ -10,9 +10,9 @@ class Stocks extends Model {
      * @var string
      */
     protected $table = 'stocks';
-    protected $created_at = 'false';
-    protected $updated_at = 'false';
-
+/*    protected $created_at = 'false';
+    protected $updated_at = 'false';*/
+    public $timestamps = 'false';
     /**
      * The attributes that are mass assignable.
      *
