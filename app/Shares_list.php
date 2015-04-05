@@ -12,7 +12,7 @@ class Shares_list extends Model {
     protected $table = 'shares_list';
 /*    protected $created_at = 'false';
     protected $updated_at = 'false';*/
-    public $timestamps = 'false';
+    public $timestamps = false;
     /**
      * The attributes that are mass assignable.
      *

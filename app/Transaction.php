@@ -12,7 +12,7 @@ class Transactions extends Model {
     protected $table = 'transactions';
 /*    protected $created_at = 'false';
     protected $updated_at = 'false';*/
-    public $timestamps = 'false';
+    public $timestamps = false;
 
 
 

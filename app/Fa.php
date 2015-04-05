@@ -18,7 +18,7 @@ class Fa extends \Eloquent{
     protected $table = 'fa';
 /*    protected $created_at = 'false';
     protected $updated_at = 'false';*/
-    public $timestamps = 'false';
+    public $timestamps = false;
     /**
      * The attributes that are mass assignable.
      *

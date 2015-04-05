@@ -12,7 +12,7 @@ class Account extends \Eloquent {
     protected $table = 'account';
 /*    protected $created_at = 'false';
     protected $updated_at = 'false';*/
-    public $timestamps = 'false';
+    public $timestamps = false;
 
     /**
      * The attributes that are mass assignable.
