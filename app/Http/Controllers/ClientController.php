@@ -74,8 +74,8 @@ class ClientController extends Controller {
     public function edit($id)
     {
         $client1 = Client::where('c_id',$id)->update(['contact_no'=>'056837294']);
-        $client1 = Client::where('c_id',$id)->update(['account_no'=>'383226677']);
-        $client1 = Client::where('c_id',$id)->update(['email'=>'wth@gmail.com']);
+/*        $client1 = Client::where('c_id',$id)->update(['account_no'=>'383226677']);
+        $client1 = Client::where('c_id',$id)->update(['email'=>'wth@gmail.com']);*/
 
         return redirect('client');
 
