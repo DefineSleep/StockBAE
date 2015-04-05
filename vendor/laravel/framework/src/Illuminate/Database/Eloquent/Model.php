@@ -1741,7 +1741,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
 	 */
 	public function setUpdatedAt($value)
 	{
-		$this->{static::UPDATED_AT} = $value;
+		//$this->{static::UPDATED_AT} = $value;
 	}
 
 	/**

@@ -21,7 +21,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBae - FA Clients</title>
+    <title>StockBAE - FA Clients</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
@@ -333,13 +333,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!--Top header start-->
-                            <h3 class="ls-top-header">Table</h3>
+                            <h3 class="ls-top-header">Zain Ali Client Manager</h3>
                             <!--Top header end -->
 
                             <!--Top breadcrumb start -->
                             <ol class="breadcrumb">
                                 <li><a href="#"><i class="fa fa-home"></i></a></li>
-                                <li class="active">Table</li>
+                                <li class="active">Zain Ali Client Manager</li>
                             </ol>
                             <!--Top breadcrumb start -->
                         </div>
@@ -360,7 +360,7 @@
                                     <div class="col-md-1"></div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-2">
-                                        <a href="compose-mail.html"><i class="glyphicon glyphicon-plus"></i> <span>Add New Client</span></a>
+                                        <a href="http://localhost/StockBAE/public/faclient-form"><i class="glyphicon glyphicon-plus"></i> <span>Add New Client</span></a>
                                     </div>
                                 </div>
 
@@ -391,7 +391,7 @@
 
                                                 <tr>
                                                     <td>{{ $clients[$i]->c_id}}</td>
-                                                    <td>{{ $clients[$i]->name}}</td>
+                                                    <td>{{ $clients[$i]->cname}}</td>
                                                     <td>{{ $clients[$i]->email}}</td>
                                                     <td>{{ $clients[$i]->address}}</td>
                                                     <td>{{ $clients[$i]->dob}}</td>
@@ -402,8 +402,8 @@
                                                     <td>
                                                         <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
                                                         <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
-                                                        {!! Form::open(['method' => 'POST', 'route' => ['client/delete',$clients[$i]->c_id ]]) !!}
-                                                        {!! Form::button('<i class="fa fa-minus"></i> DELETE', array('type' => 'submit','alt' => 'Delete', 'class' => 'btn btn-xs btn-danger'))!!}
+                                                        {!! Form::open(['method' => 'POST', 'route' => ['faclient/delete',$clients[$i]->c_id ]]) !!}
+                                                        {!! Form::button('<i class="fa fa-minus"></i> REMOVE', array('type' => 'submit','alt' => 'Delete', 'class' => 'btn btn-xs btn-danger'))!!}
                                                         {!! Form::close() !!}
                                                         {{--<button class="btn btn-xs btn-danger"><i class="fa fa-minus"></i></button>--}}
                                                     </td>

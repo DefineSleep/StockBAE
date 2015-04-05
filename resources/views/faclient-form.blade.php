@@ -370,7 +370,7 @@
                                     <div class="panel-body form_view">
 
                                         <form id="formID" class="formular form-horizontal ls_form" method="post"
-                                              action="client/add">
+                                              action="faclient/add">
 
                                             <div class="row ls_divider">
                                                 <div class="form-group">
@@ -379,15 +379,7 @@
                                                     <div class="col-md-10">
                                                         <select class="form-control" name="fa_id"
                                                                 id="fa_id">
-                                                            <option value="bb8">Bobby Khoury</option>
-                                                            <option value="cv8">Castiel Collins</option>
-                                                            <option value="dd8">Dalia Hassen</option>
-                                                            <option value="gh8">Gabriel Hamilton</option>
-                                                            <option value="kj8">Karim Abubakar</option>
-                                                            <option value="mn9">Maliha Nisar</option>
-                                                            <option value="pp9">Pippa Parkinson</option>
-                                                            <option value="qw1">Quinn Elizabeth</option>
-                                                            <option value="vv8">Vanessa Hudson</option>
+                                                            <option value="qw1">Select FA</option>
                                                             <option selected value="zx5">Zain Ali</option>
                                                         </select>
                                                     </div>

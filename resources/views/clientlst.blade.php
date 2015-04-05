@@ -61,7 +61,7 @@
             <!--Logo text start-->
             <div class="header-logo">
                 <a href="index.html" title="">
-                    <h1>StockBae</h1>
+                    <h1>StockBAE</h1>
                 </a>
             </div>
             <!--Logo text End-->
@@ -382,6 +382,7 @@
                                                 <th>Account No.</th>
                                                 <th>National Insurance No.</th>
                                                 <th>Contact No.</th>
+                                                <th>Account Balance</th>
                                                 <th>Networth</th>
                                                 <th class="text-center">Action</th>
                                             </tr>
@@ -398,10 +399,14 @@
                                                     <td>{{ $clients[$i]->account_no}}</td>
                                                     <td>{{ $clients[$i]->ni_no}}</td>
                                                     <td>{{ $clients[$i]->contact_no}}</td>
+                                                    <td>{{ $clients[$i]->acc_bal}}</td>
                                                     <td>{{ $clients[$i]->networth}}</td>
                                                     <td>
                                                         <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
-                                                        <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
+                                                        {!! Form::open(['method' => 'POST', 'route' => ['client/edit',$clients[$i]->c_id ]]) !!}
+                                                        {!! Form::button('<i class="fa fa-minus"></i> EDIT', array('type' => 'submit','alt' => 'Edit', 'class' => 'btn btn-xs btn-warning'))!!}
+                                                        {!! Form::close() !!}
+                                                        {{--<button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>--}}
                                                         {!! Form::open(['method' => 'POST', 'route' => ['client/delete',$clients[$i]->c_id ]]) !!}
                                                         {!! Form::button('<i class="fa fa-minus"></i> DELETE', array('type' => 'submit','alt' => 'Delete', 'class' => 'btn btn-xs btn-danger'))!!}
                                                         {!! Form::close() !!}

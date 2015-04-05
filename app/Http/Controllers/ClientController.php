@@ -25,8 +25,13 @@ class ClientController extends Controller {
     public function index()
     {
         $clients =  Client_list::all()->first()
-            ->select('client.c_id as c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
+            ->select('client.c_id as c_id','fa.name as fname','client.name as cname',
+                'client.email as email', 'client.address as address', 'client.dob as dob',
+                'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,
+                'account.amount as acc_bal','networth')
+
             ->join('client', 'client_list.c_id', '=', 'client.c_id')
+            ->join('account', 'client.account_no', '=', 'account.account_no')
             ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->get();
         return \View::make('clientlst')->with('clients',$clients);
     }
@@ -53,7 +58,7 @@ class ClientController extends Controller {
 
         $acc = Account::updateOrCreate(['account_no' => $account_no, 'amount' => '100000']);
         $client = Client::updateOrCreate(['c_id' => $c_id,'password' => \Hash::make($password),'name' => $name,'email' => $email,
-            'address' => $address,'dob' => $dob,'account_no' => $account_no,'contact_no' => $contact_no,'ni_no' => $ni_no,'networth' => '0']);
+            'address' => $address,'dob' => $dob,'account_no' => $account_no,'contact_no' => $contact_no,'ni_no' => $ni_no,'networth' => '100000']);
         $client_list = Client_list::updateOrCreate(['fa_id' => $fa_id, 'c_id' => $c_id]);
 
         return redirect('client');
@@ -66,11 +71,11 @@ class ClientController extends Controller {
         return redirect('client');
     }
 
-    public function edit()
+    public function edit($id)
     {
-        $client1 = Client::where('c_id','sm709')->update(['contact_no'=>'056837294']);
-        $client1 = Client::where('c_id','sm709')->update(['account_no'=>'383226677']);
-        $client1 = Client::where('c_id','sm709')->update(['email'=>'wth@gmail.com']);
+        $client1 = Client::where('c_id',$id)->update(['contact_no'=>'056837294']);
+        $client1 = Client::where('c_id',$id)->update(['account_no'=>'383226677']);
+        $client1 = Client::where('c_id',$id)->update(['email'=>'wth@gmail.com']);
 
         return redirect('client');
 
@@ -78,10 +83,11 @@ class ClientController extends Controller {
 
     public function delete($id)
     {
+
         $client1 = Client_list::where('c_id',$id)->delete();
-        $clientacc = Client::all('account_no')->where('c_id',$id);
         $client3 = Client::where('c_id',$id)->delete();
-        $acc = Account::where('account_no',$clientacc)->delete();
+       /* $clientacc = Client::all('account_no')->where('c_id',$id);
+        $acc = Account::where('account_no',$clientacc)->delete();*/
 
         return redirect('client');
     }
