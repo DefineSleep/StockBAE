@@ -21,7 +21,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBae - Dashboard</title>
+    <title>StockBAE - About Us</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
@@ -252,17 +252,17 @@
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
                             <div class="circle-image"></div>
-                            <h5 style="text-align: center;" >Naiyarah Hussain</h5> <p class="text-center">Project Manager </p>
+                            <h5 style="text-align: center;" >Naiyarah Hussain</h5> <p class="text-center">Project Manager & Lead Programmer</p>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
                             <div class="circle-image-2"></div>
-                            <h5 style="text-align: center;" >Asmaa Azeem</h5> <p class="text-center">Frontend Designer</p>
+                            <h5 style="text-align: center;" >Asmaa Azeem</h5> <p class="text-center">Frontend Designer & Programmer</p>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
                             <div class="circle-image-3"></div>
-                            <h5 style="text-align: center;" >Kasra Ahangaran</h5> <p class="text-center">UI/UX Expert</p>
+                            <h5 style="text-align: center;" >Kasra Ahangaran</h5> <p class="text-center">UI/UX Expert & Programmer</p>
                         </div>
                         <div class="col-md-1"></div>
                     </div>
@@ -273,12 +273,12 @@
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
                             <div class="circle-image-4"></div>
-                            <h5 style="text-align: center;" >Nigel Marshal</h5> <p class="text-center">Technical Writer</p>
+                            <h5 style="text-align: center;" >Nigel Marshal</h5> <p class="text-center">Technical Writer & Programmer</p>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-2">
                             <div class="circle-image-5"></div>
-                            <h5 style="text-align: center;" >Shoaib Mawani</h5> <p class="text-center">Database Manager</p>
+                            <h5 style="text-align: center;" >Shoaib Mawani</h5> <p class="text-center">Database Manager & Programmer</p>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-2">

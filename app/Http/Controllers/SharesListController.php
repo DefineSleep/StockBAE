@@ -160,7 +160,7 @@ class SharesListController extends Controller
             \DB::update("update account set amount = amount - $final_price  where account_no = '345678987'"); //dis works
             return \View::make('portfolio')->with('shares', $shares);
         } else {
-            Shares_list::updateOrCreate(['symbol' => 'AUV', 'c_id' => 'sm709', 'quantity' => '5', 'trigger' => '10', 'bought_price' =>  '25.00' , 'date_bought' => '2015-04-04']);
+            Shares_list::updateOrCreate(['symbol' => 'AAPL', 'c_id' => 'sm709', 'quantity' => '200', 'trigger' => '20', 'bought_price' =>  '127.33' , 'date_bought' => '2015-04-07']);
             return \View::make('portfolio')->with('shares', $shares);
         }
     }

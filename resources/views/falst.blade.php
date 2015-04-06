@@ -387,7 +387,7 @@
                                                 <td>{{ $fas[$i]->email}}</td>
                                                 <td>{{ $fas[$i]->address}}</td>
                                                 <td>{{ $fas[$i]->dob}}</td>
-                                                <td>{{ $fas[$i]->contact_no}}</td>
+                                                <td>+971{{ $fas[$i]->contact_no}}</td>
                                                 <td>{{ $fas[$i]->start_date}}</td>
                                                {{-- <td>{{ 100.69 }}</td>--}}
                                                 <td>{{ $fas[$i]->ni_no}}</td>

@@ -22,7 +22,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBae - Dashboard</title>
+    <title>StockBAE - Portfolio</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
@@ -371,14 +371,14 @@
                             <i class="fa fa-users"></i>
                             <h4>No. of Investments</h4>
                         </div>
-                            <div class="memberBox-value up"><i class="fa fa-user"></i> <span>{{--{{ $portfolio_data->$count  }}--}}3</span></div>
+                            <div class="memberBox-value up"><i class="fa fa-user"></i> <span>{{--{{ $portfolio_data->$count  }}--}}5</span></div>
                     </li>
                     <li>
                         <div class="memberBox-title">
                             <i class="fa fa-eye"></i>
                             <h4>Auto Sell</h4>
                         </div>
-                        <div class="memberBox-value down"><i class="fa fa-flag"></i> <span>4%</span></div>
+                        <div class="memberBox-value down"><i class="fa fa-flag"></i> <span>18%</span></div>
                     </li>
                     <li>
                         <div class="memberBox-title">
@@ -430,7 +430,7 @@
                         <div class="col-md-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Pie Chart</h3>
+                                    <h3 class="panel-title">Net Worth Breakdown</h3>
                                 </div>
                                 <div class="panel-body">
                                     <div id="flotPieChart" class="flotPieChart"></div>

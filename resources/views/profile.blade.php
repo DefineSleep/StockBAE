@@ -21,7 +21,7 @@
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
-    <title>StockBae - Dashboard</title>
+    <title>StockBAE - Dashboard</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
@@ -283,7 +283,7 @@
     <section id="left-navigation">
         <!--Left navigation user details start-->
         <div class="circle-image-4"></div>
-        <h5 style="text-align: center;" >Zain Ali</h5> <p class="text-center">Database Manager</p>
+        <h5 style="text-Pearsongn: center;" >Scott Pearson</h5> <p class="text-center">Database Manager</p>
 
         <!--Left navigation user details end-->
 
@@ -355,7 +355,7 @@
                                 <div class="col-md-5 col-sm-5 col-xs-12">
                                     <!--User Name-->
                                     <div class="ls-user-name">
-                                        <h1>Mr. Zain Ali</h1>
+                                        <h1>Mr. Scott Pearson</h1>
                                     </div>
                                 </div>
                                 <div class="col-md-7 col-sm-7 col-xs-12">
