@@ -278,7 +278,7 @@
 <section id="left-navigation">
             <!--Left navigation user details start-->
             <div class="user-image">
-                <img src="../../public/images/userimage/team5.jpg" alt=""/>
+                <img src="../../public/images/userimage/bm.png" alt=""/>
                
             </div>
            
@@ -365,23 +365,36 @@
                                     <div class="user-detail col-md-4 col-sm-5">
                                         <div class="ls-user-position">
                                             <h4>Administrator</h4>
+                                            <p>Word</p>
                                         </div>
 
                                         <!--Address-->
                                         <address>
                                             <i class="fa fa-map-marker"></i>
-                                            123 Sesame Street<br>
-                                            San Francisco, CA 420<br>
+                                            795 Folsom Ave, Suite 600<br>
+                                            San Francisco, CA 94107<br>
                                             <abbr title="Phone"><i class="fa fa-mobile"></i> P:</abbr> (123) 456-7890
                                         </address>
 
 
                                         <!--User Image-->
                                         <div class="user-pic">
-                                            <img src="../../public/images/userimage/team5.jpg" alt="image">
+                                            <img src="../../public/images/userimage/bmb.jpg" alt="image">
                                         </div>
                                     </div>
+                                    <!--User Info Start-->
+                                    <div class="ls-user-info col-md-8 col-sm-7">
+                                        <div class="ls-user-text">
+                                            <p>wordwordwordwordwordwordwordword</p>
+                                            <p>wordwordwordwordwordwordwordwordwordwordwordword</p>
 
+                                        </div>
+                                        <div class="ls-user-text2">
+                                            <h4>Big Word</h4>
+                                            wordwordwordwordwordwordwordwordwordwordwordwordwordwordwordword
+                                        </div>
+                                    </div>
+                                    <!--User Info Finish-->
                                     <!--User Details Finish-->
 
                                 </div>
@@ -397,15 +410,21 @@
 					
 										<div class="row">
                                             <div class="col-md-12">
-                                                <h3 class="ls-header">Summary</h3>
+                                                <h3 class="ls-header">Possible Name</h3>
                                                 <p>
-                                                    <span class="about-me-text">
+                                                    <span class="about-me-text">wordwordwordwordwordwordwordwordwordwordwordword
+                                                        wordwordwordwordwordwordwordwordwordwordwordword
+                                                        wordwordwordwordwordwordwordwordwordwordwordwordwordwordwordword
+                                                        wordwordwordwordwordwordwordword
+                                                        wordwordwordwordwordwordwordwordwordwordwordword
                                                     </span>
                                                 </p>
 
-                                                <p>Specialties:<br>Independent financial advice in areas such as pension transfers <br>
-                                                    (QROPS, SIPPS, QNUPS), inheritance tax planning, asset protection, tax free <br>
-                                                    regular savings, lump sum investments, life assurance, critical illness protection.
+                                                <p>wordwordwordwordwordwordwordwordwordwordwordwordwordwordwordword
+                                                    wordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordword
+                                                    wordwordwordwordwordwordwordwordwordwordwordword
+                                                    wordwordwordwordwordwordwordwordwordwordwordwordwordwordwordword
+                                                    wordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordwordword
                                                 </p>
                                             </div>
                                             <div class="col-md-5">
@@ -441,7 +460,180 @@
     </ul>
     <!--Tab navigation end -->
 
+    <!--Tab content start-->
+    <div class="tab-content">
+        <div class="tab-pane active" id="chatTab">
+            <div class="nano">
+                <div class="nano-content">
+                    <div class="chat-group chat-group-fav">
+                        <h3 class="ls-header">Favorites</h3>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-online"></span>
+                            Catherine J. Watkins
+                            <span class="badge badge-lightBlue">1</span>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-idle"></span>
+                            Fernando G. Olson
+                        </a>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-busy"></span>
+                            Susan J. Best
+                        </a>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-offline"></span>
+                            Brandon S. Young
+                        </a>
+                    </div>
+                    <div class="chat-group chat-group-coll">
+                        <h3 class="ls-header">Colleagues</h3>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-offline"></span>
+                            Brandon S. Young
+                        </a>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-idle"></span>
+                            Fernando G. Olson
+                        </a>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-online"></span>
+                            Catherine J. Watkins
+                            <span class="badge badge-lightBlue">3</span>
+                        </a>
 
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-busy"></span>
+                            Susan J. Best
+                        </a>
+
+                    </div>
+                    <div class="chat-group chat-group-social">
+                        <h3 class="ls-header">Social</h3>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-online"></span>
+                            Catherine J. Watkins
+                            <span class="badge badge-lightBlue">5</span>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <span class="user-status is-busy"></span>
+                            Susan J. Best
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-box">
+                <div class="chat-box-header">
+                    <h5>
+                        <span class="user-status is-online"></span>
+                        Catherine J. Watkins
+                    </h5>
+                </div>
+
+                <div class="chat-box-content">
+                    <div class="nano nano-chat">
+                        <div class="nano-content">
+
+                            <ul>
+                                <li>
+                                    <span class="user">Catherine</span>
+                                    <p>Are you here?</p>
+                                    <span class="time">10:10</span>
+                                </li>
+                                <li>
+                                    <span class="user">Catherine</span>
+                                    <p>Whohoo!</p>
+                                    <span class="time">10:12</span>
+                                </li>
+                                <li>
+                                    <span class="user">Catherine</span>
+                                    <p>This message is pre-queued.</p>
+                                    <span class="time">10:15</span>
+                                </li>
+                                <li>
+                                    <span class="user">Catherine</span>
+                                    <p>Do you like it?</p>
+                                    <span class="time">10:20</span>
+                                </li>
+                                <li>
+                                    <span class="user">Catherine</span>
+                                    <p>This message is pre-queued.</p>
+                                    <span class="time">11:00</span>
+                                </li>
+                                <li>
+                                    <span class="user">Catherine</span>
+                                    <p>Hi, you there ?</p>
+                                    <span class="time">12:00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="chat-write">
+                <textarea class="form-control autogrow" placeholder="Type your message"></textarea>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="settingTab">
+
+            <div class="setting-box">
+                <h3 class="ls-header">Account Setting</h3>
+                <div class="setting-box-content">
+                    <ul>
+                        <li><span class="pull-left">Online status: </span><input type="checkbox" class="js-switch-red" checked/></li>
+                        <li><span class="pull-left">Show offline contact: </span><input type="checkbox" class="js-switch-light-blue" checked/></li>
+                        <li><span class="pull-left">Invisible mode: </span><input class="js-switch" type="checkbox" checked></li>
+                        <li><span class="pull-left">Log all message:</span><input class="js-switch-light-green" type="checkbox" checked></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setting-box">
+                <h3 class="ls-header">Maintenance</h3>
+                <div class="setting-box-content">
+                    <div class="easy-pai-box">
+                                <span class="easyPieChart" data-percent="90">
+                                    <span class="easyPiePercent"></span>
+                                </span>
+                    </div>
+                    <div class="easy-pai-box">
+                        <button class="btn btn-xs ls-red-btn js_update">Update Data</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-box">
+                <h3 class="ls-header">Progress</h3>
+                <div class="setting-box-content">
+
+                    <h5>File uploading</h5>
+                    <div class="progress">
+                        <div class="progress-bar ls-light-blue-progress six-sec-ease-in-out"
+                             aria-valuetransitiongoal="10"></div>
+                    </div>
+
+                    <h5>Plugin setup</h5>
+                    <div class="progress progress-striped active">
+                        <div class="progress-bar six-sec-ease-in-out ls-light-green-progress"
+                             aria-valuetransitiongoal="20"></div>
+                    </div>
+                    <h5>Post New Article</h5>
+                    <div class="progress progress-striped active">
+                        <div class="progress-bar ls-yellow-progress six-sec-ease-in-out"
+                             aria-valuetransitiongoal="80"></div>
+                    </div>
+                    <h5>Create New User</h5>
+                    <div class="progress progress-striped active">
+                        <div class="progress-bar ls-red-progress six-sec-ease-in-out"
+                             aria-valuetransitiongoal="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Tab content -->
 </section>
 <!--Right hidden  section end -->
 </section>

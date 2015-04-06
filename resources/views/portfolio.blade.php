@@ -385,7 +385,7 @@
                             <i class="fa fa-shopping-cart"></i>
                             <h4>Networth</h4>
                         </div>
-                        <div class="memberBox-value up"><i class="fa  fa-money"></i> <span>${{--{{$portfolio_data->$sum}}--}}</span></div>
+                        <div class="memberBox-value up"><i class="fa  fa-money"></i> <span>${{ $shares[0]['networth'] }}</span></div>
                     </li>
                 </ul>
             </div>
@@ -434,11 +434,57 @@
                                 </div>
                                 <div class="panel-body">
                                     <div id="flotPieChart" class="flotPieChart"></div>
-                                    <div class="paiChartAction">
-                                        <h3 id="title">Pic Chart</h3>
+                                    @for($i = 0; $i<count($shares);$i++)
+                                        <div class="col-md-3">
+                                            <table class="table">
+                                                {{--<tr>
+                                                    <td>C_ID</td>
+                                                    <td>{{ $shares[$i]['c_id'] }}</td>
+                                                </tr>
+--}}
+                                                <tr>
+                                                    <td>Symbol</td>
+                                                    <td>{{ $shares[$i]['symbol'] }}</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Quantity Bought</td>
+                                                    <td>{{$shares[$i]['quantity'] }}</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Auto Sell Trigger</td>
+                                                    <td>{{ $shares[$i]['trigger'].'%'}}</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Bought Price</td>
+                                                    <td>{{'$'.  $shares[$i]['bought_price'] }}</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sell Today For</td>
+                                                    <td>{{ '$'. $shares[$i]['bought_price'] * $shares[$i]['quantity'] }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sell Today For</td>
+                                                    <td>{{ '$'. $shares[$i]['bought_price'] * $shares[$i]['quantity'] }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+                                        <div class="col-md-1"></div>
+                                    @endfor
+                                    {{--<div class="paiChartAction">
+                                        <h3 id="title">Pie Chart</h3>
 
                                         <p id="pie chart"></p>
-                                    </div>
+
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>

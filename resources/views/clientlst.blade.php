@@ -256,7 +256,7 @@
                         <!--Email drop down end-->
                     </li>
                     <li>
-                        <a href="login.html">
+                        <a href="login">
                             <i class="fa fa-power-off"></i>
                         </a>
                     </li>
@@ -294,33 +294,33 @@
             <!--Phone Navigation Menu icon start-->
 
             <!--Left navigation start-->
-            <ul class="mainNav">
-                <li>
-                    <a href="index-2.html">
-                        <i class="fa fa-dashboard"></i> <span>Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <i class="fa fa-dashboard"></i> <span>Client Portfolio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="calendar">
-                        <i class="fa fa-dashboard"></i> <span>Calender</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="falst.html">
-                        <i class="fa fa-dashboard"></i> <span>Financial Advisors</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="client">
-                        <i class="fa fa-dashboard"></i> <span>Clients</span>
-                    </a>
-                </li>
-            </ul>
+    <ul class="mainNav">
+        <li>
+            <a href="profile">
+                <i class="fa fa-dashboard"></i> <span>Profile</span>
+            </a>
+        </li>
+        <li>
+            <a href="portfolio">
+                <i class="fa fa-dashboard"></i> <span>Client Portfolio</span>
+            </a>
+        </li>
+        <li>
+            <a href="calendar">
+                <i class="fa fa-dashboard"></i> <span>Calender</span>
+            </a>
+        </li>
+        <li>
+            <a href="fa">
+                <i class="fa fa-dashboard"></i> <span>Financial Advisors</span>
+            </a>
+        </li>
+        <li>
+            <a href="client">
+                <i class="fa fa-dashboard"></i> <span>Clients</span>
+            </a>
+        </li>
+    </ul>
             <!--Left navigation end-->
         </section>
 <!--Left navigation section end-->
@@ -402,9 +402,12 @@
                                                     <td>{{ $clients[$i]->acc_bal}}</td>
                                                     <td>{{ $clients[$i]->networth}}</td>
                                                     <td>
-                                                        <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
+                                                        {!! Form::open(['method' => 'POST', 'route' => ['portfolio',$clients[$i]->c_id ]]) !!}
+                                                        {!! Form::button('<i class="fa fa-eye"></i>', array('type' => 'submit','alt' => 'View', 'class' => 'btn btn-xs btn-success'))!!}
+                                                        {!! Form::close() !!}
+                                                       {{-- <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>--}}
                                                         {!! Form::open(['method' => 'POST', 'route' => ['client/edit',$clients[$i]->c_id ]]) !!}
-                                                        {!! Form::button('<i class="fa fa-minus"></i> EDIT', array('type' => 'submit','alt' => 'Edit', 'class' => 'btn btn-xs btn-warning'))!!}
+                                                        {!! Form::button('<i class="fa fa-pencil-square-o"></i>', array('type' => 'submit','alt' => 'Edit', 'class' => 'btn btn-xs btn-warning'))!!}
                                                         {!! Form::close() !!}
                                                         {{--<button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>--}}
                                                         {!! Form::open(['method' => 'POST', 'route' => ['client/delete',$clients[$i]->c_id ]]) !!}
