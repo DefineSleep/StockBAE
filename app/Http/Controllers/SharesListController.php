@@ -136,26 +136,26 @@ class SharesListController extends Controller
 
         $final_price = $quantity * $price;
 
-        $checker = Shares_list::all(['c_id'])->first()
+        $check_shares_list = Shares_list::all(['c_id'])->first()
             ->select('symbol', 'c_id', 'quantity', 'trigger', 'bought_price', 'date_bought')
             ->where('c_id', '=', 'sm709')
             ->where('symbol', '=', $symbol)
             ->get();
 
-        $killmeplz = $checker->toArray();
+        $checking = $check_shares_list->toArray();
 
-        $yourbalance = Account::all()->first()
+        $acc_balance = Account::all()->first()
             ->select('amount')
             ->where('account_no', '=', '345678987')
             ->get();
 
-        $checker = array_filter($killmeplz);
-        if ($yourbalance[0]['amount'] < $final_price) {
+        $check_shares_list = array_filter($checking);
+        if ($acc_balance[0]['amount'] < $final_price) {
 
             return \View::make('portfolio')->with('shares', $shares);
         }
 
-        elseif (!empty($checker)) {
+        elseif (!empty($check_shares_list)) {
             \DB::update("update shares_list set quantity = quantity+ $quantity  where c_id = 'sm709' AND symbol='$symbol'");
             \DB::update("update account set amount = amount - $final_price  where account_no = '345678987'"); //dis works
             return \View::make('portfolio')->with('shares', $shares);
@@ -170,7 +170,7 @@ class SharesListController extends Controller
 
 
     /*
-                if (!empty($checker)) {*/
+                if (!empty($check_shares_list)) {*/
 
 
     // }

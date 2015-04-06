@@ -28,9 +28,10 @@ Route::get('calendar/edit', 'MeetingController@edit');
 Route::get('calendar/delete', 'MeetingController@delete');
 
 Route::get('client-form', 'ClientController@form');
+Route::post('editclient-form/{id}', array('as'=>'editclient-form', 'uses'=> 'ClientController@editform'));
 Route::get('client', 'ClientController@index');
 Route::post('client/add',array('as'=>'client/add','uses'=>'ClientController@Add'));
-Route::post('client/edit/{id}',array('as'=>'client/edit', 'uses'=> 'ClientController@edit'));
+Route::post('client/edit',array('as'=>'client/edit','uses'=>'ClientController@edit'));
 Route::post('client/delete/{id}', array('as'=>'client/delete', 'uses'=>'ClientController@delete'));
 
 Route::get('fa-form', 'FaController@form');

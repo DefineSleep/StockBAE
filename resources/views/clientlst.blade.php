@@ -398,15 +398,15 @@
                                                     <td>{{ $clients[$i]->dob}}</td>
                                                     <td>{{ $clients[$i]->account_no}}</td>
                                                     <td>{{ $clients[$i]->ni_no}}</td>
-                                                    <td>{{ $clients[$i]->contact_no}}</td>
-                                                    <td>{{ $clients[$i]->acc_bal}}</td>
-                                                    <td>{{ $clients[$i]->networth}}</td>
+                                                    <td>+971{{ $clients[$i]->contact_no}}</td>
+                                                    <td>${{ $clients[$i]->acc_bal}}</td>
+                                                    <td>${{ $clients[$i]->networth}}</td>
                                                     <td>
                                                         {!! Form::open(['method' => 'POST', 'route' => ['portfolio',$clients[$i]->c_id ]]) !!}
                                                         {!! Form::button('<i class="fa fa-eye"></i>', array('type' => 'submit','alt' => 'View', 'class' => 'btn btn-xs btn-success'))!!}
                                                         {!! Form::close() !!}
                                                        {{-- <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>--}}
-                                                        {!! Form::open(['method' => 'POST', 'route' => ['client/edit',$clients[$i]->c_id ]]) !!}
+                                                        {!! Form::open(['method' => 'POST', 'route' => ['editclient-form',$clients[$i]->c_id ]]) !!}
                                                         {!! Form::button('<i class="fa fa-pencil-square-o"></i>', array('type' => 'submit','alt' => 'Edit', 'class' => 'btn btn-xs btn-warning'))!!}
                                                         {!! Form::close() !!}
                                                         {{--<button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>--}}

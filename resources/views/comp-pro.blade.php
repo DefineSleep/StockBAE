@@ -24,7 +24,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/fab.ico">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/sb-icon-b.png">
 
     <title>StockBAE - Company Profile</title>
 
@@ -63,14 +63,14 @@
     {{-- Highcharts data--}}
     <script type="text/javascript">
         var quoteData = [];
-        $(function() {
+        $(function () {
             var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20%3D%20%22YHOO%22%20and%20startDate%20%3D%20%222014-09-11%22%20and%20endDate%20%3D%20%222015-03-10%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=&";
-            $.getJSON(url, function(data){
-                $.each(data.query.results.quote, function(index, value) {
+            $.getJSON(url, function (data) {
+                $.each(data.query.results.quote, function (index, value) {
                     var theTime = value.Date;
                     var milliTime = new Date(theTime);
                     milliTime = milliTime.getTime();
-                    var results = [milliTime, parseFloat(value.Low),parseFloat(value.High)];
+                    var results = [milliTime, parseFloat(value.Low), parseFloat(value.High)];
                     quoteData.push(results);
                 })
                 createChart(quoteData);
@@ -82,18 +82,18 @@
             console.log('quoteData', quoteData);
             // Create the chart
             window.chart = new Highcharts.StockChart({
-                chart : {
-                    renderTo : 'stockgraph'
+                chart: {
+                    renderTo: 'stockgraph'
                 },
-                rangeSelector : {
-                    selected : 1
+                rangeSelector: {
+                    selected: 1
                 },
-                title : {
-                    text : 'Market Trends'
+                title: {
+                    text: 'Market Trends'
                 },
-                series : [{
-                    name : 'AAPL',
-                    data : data,
+                series: [{
+                    name: 'AAPL',
+                    data: data,
                     tooltip: {
                         valueDecimals: 2
                     }
@@ -428,7 +428,7 @@
                                 {{--<a id="modal-67078" href="#modal-container-67078" role="button" class="btn"
                                    data-toggle="modal">Launch demo modal</a>--}}
 
-                                <div class="modal fade" id="modal-container-67078" role="dialog"
+                                <div class="modal fade" id="buymodal" role="dialog"
                                      aria-labelledby="myModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -437,47 +437,137 @@
                                                         aria-hidden="true">×
                                                 </button>
                                                 <h4 class="modal-title" id="myModalLabel">
-                                                    Buy Shares for Apple(AAPL) - $99.00
+                                                    Buy Shares for Apple(AAPL) - ${{ $someArray[1]['last_trade_price'] }} <i class="fa fa-arrow-up"
+                                                                                            style="color:#4cae4c"></i>
                                                 </h4>
                                             </div>
                                             <div class="modal-body">
-                                                <label class="control-label">Account Balance </label><br>
-                                                <p style="text-align: right">
-                                                    $100000
-                                                </p>
+                                                <label class="control-label">Account Balance: $100000 </label><br>
 
-                                                <div class="form-control">
-                                                    {{--<div class="input-group">--}}
-                                                            {{--<div class="input-group-addon">Account Balance</div>
-                                                            <input type="text" class="form-control" id="cur_bal" value="2342093" disabled>--}}
-                                                    <div class="input-group">
-                                                        <label class="control-label">Enter Amount </label>
-                                                        <input placeholder="200000" class="form-control" value="" type="text"
-                                                               name="no_shares" id="no_shares"/>
-                                                    </div>
+                                                <form id="buy" class="formular form-horizontal ls_form" method="post"
+                                                      action="#">
+                                                        <div class="form-group">
+                                                            <label class="col-md-2 control-label">Enter Amount: </label>
 
-                                                    {{--</div>--}}
-                                                   {{-- <div class="input-group">
-                                                        <div class="input-group-addon">Enter Amount</div>
-                                                        <input type="text" class="form-control" id="cur_bal" value="2342093" disabled>
-                                                    </div>--}}
-                                                </div>
+                                                            <div class="col-md-10">
+                                                                <input type="text"
+                                                                       class="form-control text-input"
+                                                                       id="no_shares"
+                                                                       name="no_shares" placeholder="500">
+                                                            </div>
+                                                        </div>
+                                                </form>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
+                                                    Cancel
                                                 </button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                <button type="button" class="btn btn-primary">Buy</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="modal fade" id="sellmodal" role="dialog"
+                                     aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">×
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">
+                                                    Sell Shares for Apple(AAPL) - ${{ $someArray[1]['last_trade_price'] }} <i class="fa fa-arrow-up"
+                                                                                                                             style="color:#4cae4c"></i>
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label class="control-label">Account Balance: $74570 </label><br>
+
+                                                <form id="sell" class="formular form-horizontal ls_form" method="post"
+                                                      action="#">
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label">Enter Amount: </label>
+
+                                                        <div class="col-md-10">
+                                                            <input type="text"
+                                                                   class="form-control text-input"
+                                                                   id="no_shares"
+                                                                   name="no_shares" placeholder="500">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Cancel
+                                                </button>
+                                                <button type="button" class="btn btn-primary">Sell</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="buysuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header modal-header-success" >
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h1><i class="glyphicon glyphicon-thumbs-up"></i> Shares Bought</h1>
+                                            </div>
+                                            <div class="modal-body">
+                                                Successfully Bought 200 shares of Apple(AAPL) stock at ${{ $someArray[1]['last_trade_price'] }}
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+
+                                <div class="modal fade" id="buydanger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header modal-header-danger">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h1><i class="glyphicon glyphicon-thumbs-down"></i> Buy Failed - Insufficient Funds</h1>
+                                            </div>
+                                            <div class="modal-body">
+                                                Buying Apple(AAPL) Shares failed due to lack of sufficient funds<br>
+                                                Try again with a fewer number of shares
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+
+                                <div class="modal fade" id="sellsuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header modal-header-success" >
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h1><i class="glyphicon glyphicon-thumbs-up"></i> Shares Sold</h1>
+                                            </div>
+                                            <div class="modal-body">
+                                                Successfully Sold 100 shares of Apple(AAPL) stock at ${{ $someArray[1]['last_trade_price'] }}
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+
+
+
                                 <div class="buy-share-button">
 
-                                    <a id="modal-67078" href="#modal-container-67078" role="button"
+                                    <a id="modal-67078" href="#buymodal" role="button"
                                        class="btn ls-light-green-btn"
                                        data-toggle="modal">Buy Shares</a>
-                                    <a id="modal-67078" href="#modal-container-67078" role="button"
+                                    <a id="modal-67078" href="#sellmodal" role="button"
                                        class="btn btn-warning"
                                        data-toggle="modal">Sell Shares</a>
                                     <!--<button id="Sell Shares" type="button" class="btn ls-red-btn">Destroy</button>-->
@@ -580,8 +670,10 @@
                                             <div class="ls-user-info col-md-6 col-sm-7">
                                                 <div class="ls-user-text">
 
-                                                    <p>Apple Inc. is an American multinational corporation headquartered in
-                                                        Cupertino, California, that designs, develops, and sells consumer
+                                                    <p>Apple Inc. is an American multinational corporation headquartered
+                                                        in
+                                                        Cupertino, California, that designs, develops, and sells
+                                                        consumer
                                                         electronics, computer software, online services, and personal
                                                         computers.</p>
 
@@ -664,7 +756,6 @@
 <!-- Gallery Js Call Start -->
 <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/demo.gallery.js"></script>
 <!-- Gallery Js Finish -->
-
 
 
 </body>

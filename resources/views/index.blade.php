@@ -1,6 +1,8 @@
-@for($i = 0; $i<count($shares);$i++)
+{{--TESTING view--}}
 
-    <p>{{ $shares[$i]}}<p>
+{{--@for($i = 0; $i<count($shares);$i++)
+
+    <p>{{ $shares[$i]}}<p>--}}
 
  {{--   <p>{{ $someArray[$i]['symbol'] }}
         {{ $someArray[$i]['name'] }}
@@ -15,4 +17,6 @@
         {{ $someArray[$i]['stock_exchange'] }}
     <p>--}}
 
-@endfor
+{{--
+@endfor--}}
+{{ $c_id}}
