@@ -6,7 +6,8 @@ class StockController extends Controller
     public function display_data()
     {
         $yql_base_url = "http://query.yahooapis.com/v1/public/yql";
-        $yql_query = "select * from yahoo.finance.quoteslist where symbol in ('^GSPC','^NYA','^IXIC')";
+        /*$yql_query ="select * from yahoo.finance.quotes where symbol ='GOOG'";*/
+        $yql_query = "select * from yahoo.finance.quotes where symbol in ('MSFT','AAPL','GOOG')";
         $yql_query_url = $yql_base_url . "?q=" . urlencode($yql_query) . "&env=store://datatables.org/alltableswithkeys";
         $yql_query_url .= "&format=json";
         $session = curl_init($yql_query_url);
@@ -19,20 +20,25 @@ class StockController extends Controller
             foreach ($phpObj->query->results as $quotes) {
                 while ($i < count($quotes)) {
                     array_push($someArray, [
-                        'Symbol' => $quotes[$i]->Symbol,
-                        'Change' => $quotes[$i]->Change,
-                        'Open' => $quotes[$i]->Open,
-                        'DaysHigh' => $quotes[$i]->DaysHigh,
-                        'DaysLow' => $quotes[$i]->DaysLow,
-//						'Change' => $quotes[$i]->Change,
-                        'LastTradePriceOnly' => $quotes[$i]->LastTradePriceOnly
+                        'symbol' => $quotes[$i]->Symbol,
+                        'name' => $quotes[$i]->Name,
+                        'change_percentage' => $quotes[$i]->Change_PercentChange,
+                        'change_price' => $quotes[$i]->Change,
+                        'days_high' => $quotes[$i]->DaysHigh,
+                        'days_low' => $quotes[$i]->DaysLow,
+						'change' => $quotes[$i]->Change,
+                        'last_trade_price' => $quotes[$i]->LastTradePriceOnly,
+                        'last_trade_time' => $quotes[$i]->LastTradeTime,
+                        'last_trade_date' => $quotes[$i]->LastTradeDate,
+                        'volume' => $quotes[$i]->Volume,
+                        'stock_exchange' => $quotes[$i]->StockExchange,
                     ]);
                     $i++;
                 }
             }
         }
         //return View('browsemarket')->with('test', $someArray);
-        return view('browsemarket/display')->with('test', $someArray);
+        return \View::make('comp-pro')->with('someArray', $someArray);
         //return View::make('index');
     }
     public function getwiki($stkname){
@@ -80,7 +86,7 @@ class StockController extends Controller
                 }
             }
         }
-        return \View::make('browsemarket/search')->with('test', $someArray);
+        return \View::make('browsemarket/search')->with('someArray', $someArray);
     }
     public function stock_buy()
     {

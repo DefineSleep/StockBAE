@@ -54,6 +54,70 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+   {{-- Highcharts data--}}
+    <script>
+    $(function () {
+    var seriesOptions = [],
+    seriesCounter = 0,
+    names = ['AAPL'],
+    // create the chart when all data is loaded
+    createChart = function () {
+
+    $('#stockgraph').highcharts('StockChart', {
+
+    rangeSelector: {
+    selected: 4
+    },
+
+    yAxis: {
+    labels: {
+    formatter: function () {
+    return (this.value > 0 ? ' + ' : '') + this.value + '%';
+    }
+    },
+    plotLines: [{
+    value: 0,
+    width: 2,
+    color: 'silver'
+    }]
+    },
+
+    plotOptions: {
+    series: {
+    compare: 'percent'
+    }
+    },
+
+    tooltip: {
+    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+    valueDecimals: 2
+    },
+
+    series: seriesOptions
+    });
+    };
+
+    $.each(names, function (i, name) {
+
+    $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=' + name.toLowerCase() + '-c.json&callback=?',    function (data) {
+
+    seriesOptions[i] = {
+    name: name,
+    data: data
+    };
+
+    // As we're loading the data asynchronously, we don't know what order it will arrive. So
+    // we keep a counter and create the chart when all the data is loaded.
+    seriesCounter += 1;
+
+    if (seriesCounter === names.length) {
+    createChart();
+    }
+    });
+    });
+    });
+    </script>
 </head>
 <body class="">
 <!--Navigation Top Bar Start-->
@@ -378,50 +442,105 @@
 
                                 </div>
 
+                                {{--<a id="modal-67078" href="#modal-container-67078" role="button" class="btn"
+                                   data-toggle="modal">Launch demo modal</a>--}}
+
+                                <div class="modal fade" id="modal-container-67078" role="dialog"
+                                     aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">×
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">
+                                                    Buy Shares for Apple(AAPL) - $99.00
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                {{--<label class="control-label">Account Balance </label><br>
+                                                <p style="text-align: right">
+                                                    $100000
+                                                </p>--}}
+
+                                                <div class="form-control">
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">Account Balance</div>
+                                                        <input type="text" class="form-control" id="cur_bal" value="2342093" disabled>
+
+                                                    {{--<label class="control-label">Enter Amount </label>
+                                                    <input placeholder="200000" class="form-control" value="" type="text"
+                                                           name="no_shares" id="no_shares"/>--}}
+                                                    </div>
+                                                    <div class="input-group">
+                                                    <div class="input-group-addon">Enter Amount</div>
+                                                    <input type="text" class="form-control" id="cur_bal" value="2342093" disabled>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="buy-share-button">
-                                    <button id="release" type="button" class="btn ls-light-green-btn">Buy Shares
-                                    </button>
-                                    <button id="reset" type="button" class="btn btn-warning">Sell Shares</button>
+
+                                    <a id="modal-67078" href="#modal-container-67078" role="button"
+                                       class="btn ls-light-green-btn"
+                                       data-toggle="modal">Buy Shares</a>
+                                    <a id="modal-67078" href="#modal-container-67078" role="button"
+                                       class="btn btn-warning"
+                                       data-toggle="modal">Buy Shares</a>
                                     <!--<button id="Sell Shares" type="button" class="btn ls-red-btn">Destroy</button>-->
                                 </div>
 
                                 <br><br>
+
 
                                 <!-- imgbit -->
 
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="graph-img">
-                                            <img src="http://localhost/StockBAE/public/images/chart.png" alt=""/>
+                                            {{--<img src="http://localhost/StockBAE/public/images/chart.png" alt=""/>--}}
+                                            <div id="stockgraph" style="height: 400px; min-width: 310px"></div>
                                         </div>
                                     </div>
+                                    @for($i = 0; $i<count($someArray);$i++)
+                                        @if($someArray[$i]['symbol']== "AAPL")
                                     <div class="col-md-3">
                                         <table class="table">
                                             <tr>
                                                 <td>Symbol</td>
-                                                <td></td>
+                                                <td>{{ $someArray[$i]['symbol'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Name</td>
-                                                <td></td>
+                                                <td>{{ $someArray[$i]['name'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Last Trade Price</td>
-                                                <td></td>
+                                                <td>{{ $someArray[$i]['last_trade_price'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Last Trade Date</td>
-                                                <td></td>
+                                                <td>{{ $someArray[$i]['last_trade_date'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Last Trade Time</td>
+                                                <td>{{ $someArray[$i]['last_trade_time'] }}</td>
+                                            </tr>
+                                            <tr>
                                                 <td></td>
                                             </tr>
-                                            <tr><td></td></tr>
 
                                         </table>
                                     </div>
@@ -430,41 +549,44 @@
                                         <table class="table">
                                             <tr>
                                                 <td>Change Price</td>
-                                                <td></td>
+                                                <td> {{ $someArray[$i]['change']}}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Change Percentage</td>
-                                                <td></td>
+                                                <td>{{ $someArray[$i]['change_percentage'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Days High</td>
-                                                <td></td>
+                                                <td>  {{ $someArray[$i]['days_high'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Days Low</td>
-                                                <td></td>
+                                                <td> {{ $someArray[$i]['days_low'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Volume</td>
-                                                <td></td>
+                                                <td>  {{ $someArray[$i]['volume'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td>Stock Exchange</td>
+                                                <td>    {{ $someArray[$i]['stock_exchange'] }}</td>
+                                            </tr>
+                                            <tr>
                                                 <td></td>
                                             </tr>
-                                            <tr><td></td></tr>
 
                                         </table>
                                     </div>
 
                                     <div class="col-md-1"></div>
 
-
+                                        @endif
+                                        @endfor
                                     <!-- imgbit end -->
 
                                     <br><br>
@@ -557,6 +679,11 @@
 <!-- Gallery Js Call Start -->
 <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/demo.gallery.js"></script>
 <!-- Gallery Js Finish -->
+
+<!-- highcharts js -->
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
 </body>
 
 </html>

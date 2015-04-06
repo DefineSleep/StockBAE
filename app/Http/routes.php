@@ -14,8 +14,13 @@
 Route::get('/', 'WelcomeController@index');
 /*
 Route::get('/', 'SharesListController@networth');*/
+Route::get('login', 'WelcomeController@index');
+Route::get('profile', 'WelcomeController@profile');
+Route::get('api', 'StockController@display_data');
 
 
+Route::post('portfolio/{id}', array('as'=>'portfolio', 'uses'=> 'SharesListController@index'));
+Route::get('buy', 'SharesListController@buy');
 
 Route::get('calendar', 'MeetingController@index');
 Route::get('calendar/add', 'MeetingController@add');

@@ -22,7 +22,8 @@ class MeetingController extends Controller {
 	{
 
         $fas = Fa::all();
-        return \View::make('index')->with('fas',$fas);
+        /*return \View::make('index')->with('fas',$fas);*/
+        return view('calendar');
 	}
 
 	/**

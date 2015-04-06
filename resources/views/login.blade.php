@@ -19,31 +19,31 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="../../public/images/ico/fab.ico">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/fab.ico">
 
     <title>StockBae - Login</title>
 
     <!--Page loading plugin Start -->
-    <link rel="stylesheet" href="assets/css/plugins/pace.css">
-    <script src="../../public/js/pace.min.js"></script>
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
+    <script src="http://localhost/StockBAE/public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap-switch.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/ladda-themeless.min.css">
+    <link href="http://localhost/StockBAE/public/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/ladda-themeless.min.css">
 
-    <link href="assets/css/plugins/humane_themes/bigbox.css" rel="stylesheet">
-    <link href="assets/css/plugins/humane_themes/libnotify.css" rel="stylesheet">
-    <link href="assets/css/plugins/humane_themes/jackedup.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/humane_themes/bigbox.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/humane_themes/libnotify.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/humane_themes/jackedup.css" rel="stylesheet">
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/style.css" rel="stylesheet">
     <!-- Custom styles Style End-->
 
     <!-- Responsive Style For-->
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/responsive.css" rel="stylesheet">
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
@@ -86,7 +86,7 @@
                             </div>
 
                             <div class="input-group ls-group-input login-btn-box">
-                                <a href="index-2.html">
+                                <a href="profile">
 									<div class="btn ls-dark-btn  col-md-12 col-sm-12 col-xs-12">
 										<span class="ladda-label">Login</span>
 									</div>
@@ -107,15 +107,15 @@
 </section>
 
 </body>
-<script src="../../public/js/lib/jquery-2.1.1.min.js"></script>
-<script src="../../public/js/lib/jquery.easing.js"></script>
-<script src="../../public/js/bootstrap-switch.min.js"></script>
+<script src="http://localhost/StockBAE/public/js/lib/jquery-2.1.1.min.js"></script>
+<script src="http://localhost/StockBAE/public/js/lib/jquery.easing.js"></script>
+<script src="http://localhost/StockBAE/public/js/bootstrap-switch.min.js"></script>
 <!--Script for notification start-->
-<script src="../../public/js/loader/spin.js"></script>
-<script src="../../public/js/loader/ladda.js"></script>
-<script src="../../public/js/humane.min.js"></script>
+<script src="http://localhost/StockBAE/public/js/loader/spin.js"></script>
+<script src="http://localhost/StockBAE/public/js/loader/ladda.js"></script>
+<script src="http://localhost/StockBAE/public/js/humane.min.js"></script>
 <!--Script for notification end-->
 
-<script src="../../public/js/pages/login.js"></script>
+<script src="http://localhost/StockBAE/public/js/pages/login.js"></script>
 
 </html>
