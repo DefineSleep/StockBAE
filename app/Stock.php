@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Stocks extends Model {
+class Stock extends Model {
 
     /**
      * The database table used by the model.

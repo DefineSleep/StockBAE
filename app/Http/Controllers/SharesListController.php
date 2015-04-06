@@ -1,14 +1,14 @@
 <?php namespace App\Http\Controllers;
 
+use App\Account;
 use App\Client;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Shares_list;
+use App\Stock;
 use App\Stocks;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
-
 
 class SharesListController extends Controller {
 
@@ -38,9 +38,9 @@ class SharesListController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function investments()
+	public function store()
 	{
-        //
+		//
 	}
 
 	/**
@@ -79,29 +79,15 @@ class SharesListController extends Controller {
             ->join('stocks', 'shares_list.symbol', '=', 'stocks.symbol')
             ->where('shares_list.c_id','=', 'sm709')
             ->get();
-
-        $sum=  Shares_list::all()->first()
+        $sum=  Shares_list::all(['c_id'])->first()
             ->select('shares_list.c_id','shares_list.symbol','quantity','trigger','bought_price','date_bought','client.networth','stocks.last_trade_price')
             ->join('client', 'shares_list.c_id', '=', 'client.c_id')
             ->join('stocks', 'shares_list.symbol', '=', 'stocks.symbol')
             ->where('shares_list.c_id','=', 'sm709')
             ->sum('stocks.last_trade_price');
-
-        $count=  Shares_list::all()->first()
-            ->select('shares_list.c_id','shares_list.symbol','quantity','trigger','bought_price','date_bought','client.networth','stocks.last_trade_price')
-            ->join('client', 'shares_list.c_id', '=', 'client.c_id')
-            ->join('stocks', 'shares_list.symbol', '=', 'stocks.symbol')
-            ->where('shares_list.c_id','=', 'sm709')
-            ->count();
-
-        $portfolio_data = array(
-            'count'  => $count,
-            'sum'   => $sum
-        );
        /* $sum = Stocks::all()->sum('last_trade_price');*/
         //$ins = Client::all()->first()->where('c_id','=', 'sm709')->update(['networth' => $sum]);
-        return \View::make('portfolio')->with('portfolio_data',$portfolio_data);
-       // return \View::make('portfolio')->with('count',$count);
+        return \View::make('portfolio')->with('sum',$sum);
 	}
 
 	/**
@@ -110,9 +96,29 @@ class SharesListController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function buy()
 	{
-		//
+        /*$buy=  Shares_list::all()->first()
+            ->join('stocks', 'shares_list.symbol', '=', 'stocks.symbol')
+            ->join('client', 'shares_list.c_id', '=', 'client.c_id')
+            ->join('account', 'client.account_no', '=', 'account.account_no')
+            ->get();*/
+        $buy=  Shares_list::all();
+
+       /*     $query1=Stock::all('last_trade_price')
+                ->where('symbol','AUV');//multiple by no_shares to buy*/
+            $query2=Client::all('account.amount')->first()
+            ->join('account_no', 'client.account_no', '=', 'account.account_no')
+                ->where('c_id','sm709')->get();
+
+     /*   if($query1<$query2)
+        {*/
+
+            $update1 = Shares_list::updateOrCreate(['symbol' => 'AUV','c_id' => 'sm709','quantity'=> '5','trigger'=>'10','bought_price'=> '25','date_bought'=>'2015-04-04']);
+            $update2 = Account::where('c_id','sm709')->update(['amount'=>'amount' -  $query1] );
+       // }
+
+        return \View::make('index')->with('buy',$buy);
 	}
 
 }

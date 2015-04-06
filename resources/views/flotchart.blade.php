@@ -19,11 +19,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- iOS webapp icons -->
-    <link rel="apple-touch-icon-precomposed" href="../../public/images/ios/fickle-logo-72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../public/images/ios/fickle-logo-72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../public/images/ios/fickle-logo-114.png" />
-
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="../../public/images/ico/fab.ico">
 
