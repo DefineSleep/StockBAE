@@ -12,10 +12,10 @@
 */
 
 Route::get('/', 'WelcomeController@home');
-/*
-Route::get('/', 'SharesListController@networth');*/
 Route::get('login', 'WelcomeController@index');
 Route::get('profile', 'WelcomeController@profile');
+Route::get('search', 'WelcomeController@search');
+
 Route::get('api', 'StockController@display_data');
 
 

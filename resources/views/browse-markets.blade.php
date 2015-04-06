@@ -19,35 +19,35 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
     <!-- TODO: Add a favicon -->
-    <link rel="shortcut icon" href="assets/images/ico/fab.ico">
+    <link rel="shortcut icon" href="http://localhost/StockBAE/public/images/ico/fab.ico">
 
     <title>StockBAE - Browse Markets</title>
 
     <!--Page loading plugin Start -->
-    <link rel="stylesheet" href="assets/css/plugins/pace.css">
-    <script src="assets/js/pace.min.js"></script>
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/pace.css">
+    <script src="http://localhost/StockBAE/public/js/pace.min.js"></script>
     <!--Page loading plugin End   -->
 
     <!-- Plugin Css Put Here -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/plugins/lightGallery.css">
+    <link rel="stylesheet" href="http://localhost/StockBAE/public/css/plugins/lightGallery.css">
     <!--[if gt IE 8]>
-    <link href="assets/css/ie/ie9-gallery.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
+    <link href="http://localhost/StockBAE/public/css/ie/ie9-gallery.css" rel="stylesheet" type="text/css"> <!--<![endif]-->
 
-    <link href="assets/css/plugins/shuffle.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/plugins/shuffle.css" rel="stylesheet">
 
     <!-- Plugin Css End -->
     <!-- Custom styles Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/style.css" rel="stylesheet">
     <!-- Custom styles Style End-->
 
     <!-- Responsive Style For-->
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="http://localhost/StockBAE/public/css/responsive.css" rel="stylesheet">
     <!-- Responsive Style For-->
 
     <!-- Custom styles for this template -->
-    <script src="assets/js/lib/modernizr.js"></script>
+    <script src="http://localhost/StockBAE/public/js/lib/modernizr.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -106,7 +106,7 @@
                             <li>
                                 <a href="javascript:void(0)">
                                     <div class="goal-user-image">
-                                        <img class="rounded" src="assets/images/userimage/avatar3-80.png"
+                                        <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar3-80.png"
                                              alt="user image"/>
                                     </div>
                                     <div class="goal-content">
@@ -121,7 +121,7 @@
                             <li>
                                 <a href="javascript:void(0)">
                                     <div class="goal-user-image">
-                                        <img class="rounded" src="assets/images/userimage/avatar2-80.png"
+                                        <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png"
                                              alt="user image"/>
                                     </div>
                                     <div class="goal-content">
@@ -136,7 +136,7 @@
                             <li>
                                 <a href="javascript:void(0)">
                                     <div class="goal-user-image">
-                                        <img class="rounded" src="assets/images/userimage/avatar1-80.png"
+                                        <img class="rounded" src="http://localhost/StockBAE/public/images/userimage/avatar1-80.png"
                                              alt="user image"/>
                                     </div>
                                     <div class="goal-content">
@@ -286,7 +286,7 @@
     <section id="left-navigation">
         <!--Left navigation user details start-->
         <div class="user-image">
-            <img src="assets/images/userimage/avatar2-80.png" alt=""/>
+            <img src="http://localhost/StockBAE/public/images/userimage/avatar2-80.png" alt=""/>
 
         </div>
 
@@ -510,50 +510,50 @@
 </section>
 
 <!--Layout Script start -->
-<script type="text/javascript" src="assets/js/color.js"></script>
-<script type="text/javascript" src="assets/js/lib/jquery-1.11.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/multipleAccordion.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/color.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/lib/jquery-1.11.min.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/multipleAccordion.js"></script>
 
 <!--easing Library Script Start -->
-<script src="assets/js/lib/jquery.easing.js"></script>
+<script src="http://localhost/StockBAE/public/js/lib/jquery.easing.js"></script>
 <!--easing Library Script End -->
 
 <!--Nano Scroll Script Start -->
-<script src="assets/js/jquery.nanoscroller.min.js"></script>
+<script src="http://localhost/StockBAE/public/js/jquery.nanoscroller.min.js"></script>
 <!--Nano Scroll Script End -->
 
 <!--switchery Script Start -->
-<script src="assets/js/switchery.min.js"></script>
+<script src="http://localhost/StockBAE/public/js/switchery.min.js"></script>
 <!--switchery Script End -->
 
 <!--bootstrap switch Button Script Start-->
-<script src="assets/js/bootstrap-switch.js"></script>
+<script src="http://localhost/StockBAE/public/js/bootstrap-switch.js"></script>
 <!--bootstrap switch Button Script End-->
 
 <!--easypie Library Script Start -->
-<script src="assets/js/jquery.easypiechart.min.js"></script>
+<script src="http://localhost/StockBAE/public/js/jquery.easypiechart.min.js"></script>
 <!--easypie Library Script Start -->
 
 <!--bootstrap-progressbar Library script Start-->
-<script src="assets/js/bootstrap-progressbar.min.js"></script>
+<script src="http://localhost/StockBAE/public/js/bootstrap-progressbar.min.js"></script>
 <!--bootstrap-progressbar Library script End-->
 
-<script type="text/javascript" src="assets/js/pages/layout.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/layout.js"></script>
 <!--Layout Script End -->
 
 <!--Gallery Plugin Start-->
 <!-- Shuffle! -->
-<script type="text/javascript" src="assets/js/gallery/shuffle.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/shuffle.js"></script>
 <!-- Syntax highlighting via Prism -->
-<script type="text/javascript" src="assets/js/gallery/prism.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/prism.js"></script>
 <script>var site_url = "fickle-2.html";</script>
-<script type="text/javascript" src="assets/js/gallery/page.js"></script>
-<script type="text/javascript" src="assets/js/gallery/evenheights.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/page.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/gallery/evenheights.js"></script>
 <!--Gallery Plugin Finish-->
-<script type="text/javascript" src="assets/js/lightGallery.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/lightGallery.js"></script>
 <!-- Gallery Js Call Start -->
-<script type="text/javascript" src="assets/js/pages/demo.gallery.js"></script>
+<script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/demo.gallery.js"></script>
 <!-- Gallery Js Finish -->
 </body>
 

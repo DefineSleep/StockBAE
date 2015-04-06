@@ -43,4 +43,8 @@ class WelcomeController extends Controller {
     {
         return view('profile');
     }
+    public function search()
+    {
+        return view('browse-markets');
+    }
 }
