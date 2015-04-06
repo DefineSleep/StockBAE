@@ -282,7 +282,7 @@
 
     <section id="left-navigation">
         <!--Left navigation user details start-->
-        <div class="circle-image-5"></div>
+        <div class="circle-image-4"></div>
         <h5 style="text-align: center;" >Zain Ali</h5> <p class="text-center">Database Manager</p>
 
         <!--Left navigation user details end-->
@@ -381,7 +381,7 @@
 
                                     <!--User Image-->
                                     <div class="user-pic">
-                                        <img src="http://localhost/StockBAE/public/images/userimage/team5.jpg" alt="image">
+                                        <img src="http://localhost/StockBAE/public/images/userimage/team4.jpg" alt="image">
                                     </div>
                                 </div>
 
