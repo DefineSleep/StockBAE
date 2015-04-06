@@ -23,12 +23,12 @@ class ClientListController extends Controller {
         return view('faclient-form');
     }
 
-	public function index($fid)
+	public function index($id)
 	{
         $clients =  Client_list::all()->first()
             ->select('client.c_id','fa.name as fname','client.name as cname', 'client.email as email', 'client.address as address', 'client.dob as dob', 'client.account_no as account_no','client.ni_no as ni_no','client.contact_no as contact_no' ,'networth')
             ->join('client', 'client_list.c_id', '=', 'client.c_id')
-            ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->where('fa.fa_id',$fid)->get();
+            ->join('fa', 'client_list.fa_id', '=', 'fa.fa_id')->where('fa.fa_id',$id)->get();
         return \View::make('faclientlst')->with('clients',$clients);
 	}
 

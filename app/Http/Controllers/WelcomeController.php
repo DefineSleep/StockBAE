@@ -30,6 +30,10 @@ class WelcomeController extends Controller {
 	 *
 	 * @return Response
 	 */
+    public function home()
+    {
+        return view('info');
+    }
 	public function index()
 	{
 		return view('login');

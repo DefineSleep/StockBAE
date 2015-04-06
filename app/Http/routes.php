@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@home');
 /*
 Route::get('/', 'SharesListController@networth');*/
 Route::get('login', 'WelcomeController@index');
@@ -40,7 +40,7 @@ Route::get('fa/edit', 'FaController@edit');
 Route::post('fa/delete/{id}', array('as'=>'fa/delete', 'uses'=>'FaController@delete'));
 
 Route::get('faclient-form', 'ClientListController@form');
-Route::get('faclient/{id}', array('as'=>'faclient', 'uses'=>'ClientListController@index'));
+Route::post('faclient/{id}', array('as'=>'faclient', 'uses'=>'ClientListController@index'));
 Route::post('faclient/add', array('as'=>'faclient/add', 'uses'=>'ClientController@add'));
 Route::post('faclient/delete/{id}', array('as'=>'faclient/delete', 'uses'=>'ClientController@delete'));
 

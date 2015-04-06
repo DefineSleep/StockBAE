@@ -392,7 +392,10 @@
                                                {{-- <td>{{ 100.69 }}</td>--}}
                                                 <td>{{ $fas[$i]->ni_no}}</td>
                                                 <td>
-                                                    <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
+                                                    {!! Form::open(['method' => 'POST', 'route' => ['faclient',$fas[$i]->fa_id ]]) !!}
+                                                    {!! Form::button('<i class="fa fa-eye"></i>', array('type' => 'submit','alt' => 'View', 'class' => 'btn btn-xs btn-success'))!!}
+                                                    {!! Form::close() !!}
+                                                    {{-- <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>--}}
                                                     <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
                                                     {!! Form::open(['method' => 'POST', 'route' => ['fa/delete',$fas[$i]->fa_id ]]) !!}
                                                     {{--{!! Form::submit('<i class="fa fa-minus"></i>', ['class' => 'btn btn-xs btn-danger']) !!}--}}

@@ -69,7 +69,7 @@
     <div class="container-fluid">
         <!--Logo text start-->
         <div class="header-logo">
-            <a href="index.html" title="">
+            <a href="info" title="">
                 <h1>StockBae</h1>
             </a>
         </div>
@@ -152,7 +152,7 @@
                 </li>
                 <li class="dropdown">
 
-                    <a href="login.html">
+                    <a href="login">
                         <i class="fa fa-power-off"></i>
                     </a>
                 </li>
@@ -172,7 +172,7 @@
 
         <!--Phone Navigation Menu icon start-->
         <div class="phone-nav-box visible-xs">
-            <a class="phone-logo" href="index-2.html" title="">
+            <a class="phone-logo" href="info" title="">
                 <h1>StockBae</h1>
             </a>
 

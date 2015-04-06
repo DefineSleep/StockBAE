@@ -371,7 +371,7 @@
                             <i class="fa fa-users"></i>
                             <h4>No. of Investments</h4>
                         </div>
-                            <div class="memberBox-value up"><i class="fa fa-user"></i> <span>{{--{{ $portfolio_data->$count  }}--}}</span></div>
+                            <div class="memberBox-value up"><i class="fa fa-user"></i> <span>{{--{{ $portfolio_data->$count  }}--}}3</span></div>
                     </li>
                     <li>
                         <div class="memberBox-title">
@@ -463,9 +463,10 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td>Sell Today For</td>
-                                                    <td>{{ '$'. $shares[$i]['bought_price'] * $shares[$i]['quantity'] }}</td>
+                                                    <td>Date Bought</td>
+                                                    <td>{{  $shares[$i]['date_bought'] }}</td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>Sell Today For</td>
                                                     <td>{{ '$'. $shares[$i]['bought_price'] * $shares[$i]['quantity'] }}</td>

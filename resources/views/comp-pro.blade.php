@@ -2,6 +2,11 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
+    <!-- highcharts js -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+    <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
@@ -54,6 +59,48 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    {{-- Highcharts data--}}
+    <script type="text/javascript">
+        var quoteData = [];
+        $(function() {
+            var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20%3D%20%22YHOO%22%20and%20startDate%20%3D%20%222014-09-11%22%20and%20endDate%20%3D%20%222015-03-10%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=&";
+            $.getJSON(url, function(data){
+                $.each(data.query.results.quote, function(index, value) {
+                    var theTime = value.Date;
+                    var milliTime = new Date(theTime);
+                    milliTime = milliTime.getTime();
+                    var results = [milliTime, parseFloat(value.Low),parseFloat(value.High)];
+                    quoteData.push(results);
+                })
+                createChart(quoteData);
+            });
+            //setTimeout("createChart()", 1000);
+        });
+        function createChart(data) {
+            quoteData = quoteData.reverse();
+            console.log('quoteData', quoteData);
+            // Create the chart
+            window.chart = new Highcharts.StockChart({
+                chart : {
+                    renderTo : 'stockgraph'
+                },
+                rangeSelector : {
+                    selected : 1
+                },
+                title : {
+                    text : 'Market Trends'
+                },
+                series : [{
+                    name : 'AAPL',
+                    data : data,
+                    tooltip: {
+                        valueDecimals: 2
+                    }
+                }]
+            });
+        }
+    </script>
 </head>
 <body class="">
 <!--Navigation Top Bar Start-->
@@ -61,7 +108,7 @@
     <div class="container-fluid">
         <!--Logo text start-->
         <div class="header-logo">
-            <a href="index.html" title="">
+            <a href="info" title="">
                 <h1>StockBae</h1>
             </a>
         </div>
@@ -378,108 +425,168 @@
 
                                 </div>
 
+                                {{--<a id="modal-67078" href="#modal-container-67078" role="button" class="btn"
+                                   data-toggle="modal">Launch demo modal</a>--}}
+
+                                <div class="modal fade" id="modal-container-67078" role="dialog"
+                                     aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">×
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">
+                                                    Buy Shares for Apple(AAPL) - $99.00
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label class="control-label">Account Balance </label><br>
+                                                <p style="text-align: right">
+                                                    $100000
+                                                </p>
+
+                                                <div class="form-control">
+                                                    {{--<div class="input-group">--}}
+                                                            {{--<div class="input-group-addon">Account Balance</div>
+                                                            <input type="text" class="form-control" id="cur_bal" value="2342093" disabled>--}}
+                                                    <div class="input-group">
+                                                        <label class="control-label">Enter Amount </label>
+                                                        <input placeholder="200000" class="form-control" value="" type="text"
+                                                               name="no_shares" id="no_shares"/>
+                                                    </div>
+
+                                                    {{--</div>--}}
+                                                   {{-- <div class="input-group">
+                                                        <div class="input-group-addon">Enter Amount</div>
+                                                        <input type="text" class="form-control" id="cur_bal" value="2342093" disabled>
+                                                    </div>--}}
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="buy-share-button">
-                                    <button id="release" type="button" class="btn ls-light-green-btn">Buy Shares
-                                    </button>
-                                    <button id="reset" type="button" class="btn btn-warning">Sell Shares</button>
+
+                                    <a id="modal-67078" href="#modal-container-67078" role="button"
+                                       class="btn ls-light-green-btn"
+                                       data-toggle="modal">Buy Shares</a>
+                                    <a id="modal-67078" href="#modal-container-67078" role="button"
+                                       class="btn btn-warning"
+                                       data-toggle="modal">Sell Shares</a>
                                     <!--<button id="Sell Shares" type="button" class="btn ls-red-btn">Destroy</button>-->
                                 </div>
 
                                 <br><br>
+
 
                                 <!-- imgbit -->
 
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="graph-img">
-                                            <img src="http://localhost/StockBAE/public/images/chart.png" alt=""/>
+                                            {{--<img src="http://localhost/StockBAE/public/images/chart.png" alt=""/>--}}
+                                            <div id="stockgraph" style="height: 400px; min-width: 310px"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <table class="table">
-                                            <tr>
-                                                <td>Symbol</td>
-                                                <td></td>
-                                            </tr>
+                                    @for($i = 0; $i<count($someArray);$i++)
+                                        @if($someArray[$i]['symbol']== "AAPL")
+                                            <div class="col-md-3">
+                                                <table class="table">
+                                                    <tr>
+                                                        <td>Symbol</td>
+                                                        <td>{{ $someArray[$i]['symbol'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Name</td>
-                                                <td></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Name</td>
+                                                        <td>{{ $someArray[$i]['name'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Last Trade Price</td>
-                                                <td></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Last Trade Price</td>
+                                                        <td>{{ $someArray[$i]['last_trade_price'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Last Trade Date</td>
-                                                <td></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Last Trade Date</td>
+                                                        <td>{{ $someArray[$i]['last_trade_date'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Last Trade Time</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr><td></td></tr>
+                                                    <tr>
+                                                        <td>Last Trade Time</td>
+                                                        <td>{{ $someArray[$i]['last_trade_time'] }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                    </tr>
 
-                                        </table>
-                                    </div>
+                                                </table>
+                                            </div>
 
-                                    <div class="col-md-3">
-                                        <table class="table">
-                                            <tr>
-                                                <td>Change Price</td>
-                                                <td></td>
-                                            </tr>
+                                            <div class="col-md-3">
+                                                <table class="table">
+                                                    <tr>
+                                                        <td>Change Price</td>
+                                                        <td> {{ $someArray[$i]['change']}}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Change Percentage</td>
-                                                <td></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Change Percentage</td>
+                                                        <td>{{ $someArray[$i]['change_percentage'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Days High</td>
-                                                <td></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Days High</td>
+                                                        <td>  {{ $someArray[$i]['days_high'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Days Low</td>
-                                                <td></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Days Low</td>
+                                                        <td> {{ $someArray[$i]['days_low'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Volume</td>
-                                                <td></td>
-                                            </tr>
+                                                    <tr>
+                                                        <td>Volume</td>
+                                                        <td>  {{ $someArray[$i]['volume'] }}</td>
+                                                    </tr>
 
-                                            <tr>
-                                                <td>Stock Exchange</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr><td></td></tr>
+                                                    <tr>
+                                                        <td>Stock Exchange</td>
+                                                        <td>    {{ $someArray[$i]['stock_exchange'] }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                    </tr>
 
-                                        </table>
-                                    </div>
+                                                </table>
+                                            </div>
 
-                                    <div class="col-md-1"></div>
+                                            <div class="col-md-1"></div>
+
+                                            @endif
+                                            @endfor
+                                                    <!-- imgbit end -->
+
+                                            <br><br>
 
 
-                                    <!-- imgbit end -->
+                                            <div class="ls-user-info col-md-6 col-sm-7">
+                                                <div class="ls-user-text">
 
-                                    <br><br>
+                                                    <p>Apple Inc. is an American multinational corporation headquartered in
+                                                        Cupertino, California, that designs, develops, and sells consumer
+                                                        electronics, computer software, online services, and personal
+                                                        computers.</p>
 
-
-                                    <div class="ls-user-info col-md-6 col-sm-7">
-                                        <div class="ls-user-text">
-
-                                            <p>Apple Inc. is an American multinational corporation headquartered in
-                                                Cupertino, California, that designs, develops, and sells consumer
-                                                electronics, computer software, online services, and personal
-                                                computers.</p>
-
-                                        </div>
-                                    </div>
+                                                </div>
+                                            </div>
                                 </div>
                             </div>
 
@@ -557,6 +664,9 @@
 <!-- Gallery Js Call Start -->
 <script type="text/javascript" src="http://localhost/StockBAE/public/js/pages/demo.gallery.js"></script>
 <!-- Gallery Js Finish -->
+
+
+
 </body>
 
-</html>
+</html>s
