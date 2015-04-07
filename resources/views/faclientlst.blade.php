@@ -397,8 +397,8 @@
                                                     <td>{{ $clients[$i]->dob}}</td>
                                                     <td>{{ $clients[$i]->account_no}}</td>
                                                     <td>{{ $clients[$i]->ni_no}}</td>
-                                                    <td>{{ $clients[$i]->contact_no}}</td>
-                                                    <td>{{ $clients[$i]->networth}}</td>
+                                                    <td>+971{{ $clients[$i]->contact_no}}</td>
+                                                    <td>${{ $clients[$i]->networth}}</td>
                                                     <td>
                                                         <button class="btn btn-xs btn-success"><i class="fa fa-eye"></i></button>
                                                         <button class="btn btn-xs btn-warning"><i class="fa fa-pencil-square-o"></i></button>
