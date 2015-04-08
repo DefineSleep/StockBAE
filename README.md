@@ -1,3 +1,2 @@
 # StockBAE
-Wealth Manager
- esgdgasgasdg
+Wealth Manager for Financial Advisors
